@@ -1,0 +1,54 @@
+app-id: io.github.teamcons.unboxing
+runtime: io.github.teamcons.Platform
+runtime-version: '8'
+sdk: io.github.teamcons.Sdk
+command: io.github.teamcons.unboxing
+
+finish-args:
+  - --device=dri
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=system-bus
+  - --share=network
+  - --talk-name=org.freedesktop.PackageKit
+  - --system-talk-name=org.freedesktop.Accounts
+  - --filesystem=home:ro
+
+cleanup:
+  -  '/include'
+  -  '/lib/pkgconfig'
+  -  '/man'
+  -  '/share/doc'
+  -  '/share/gtk-doc'
+  -  '/share/man'
+  -  '/share/pkgconfig'
+  -  '/share/installed-tests'
+  -  '*.la'
+  -  '*.a'
+
+modules:
+  # Needed to access Apt
+  - name: packagekit-glib2
+    buildsystem: meson
+    sources:
+      - type: archive
+        url: https://github.com/PackageKit/PackageKit/archive/refs/tags/v1.3.2.tar.gz
+        sha256: 22df53fef59ee4542238350b5a66587416d56eabf43c8ba46208900442a7dc0f
+    config-opts:
+      - --buildtype=release
+      #- -Dpackaging_backend=['apt']
+      - -Dsystemd=false
+      - -Doffline_update=false
+      - -Dman_pages=false
+      - -Dpython_backend=false
+      - -Dbash_completion=false
+      - -Dbash_command_not_found=false
+      - -Dgtk_module=false
+
+  - name: unboxing
+    buildsystem: meson
+    builddir: true
+    sources:
+      - type: dir
+        path: .

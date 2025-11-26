@@ -1,11 +1,11 @@
-# Irish translations for io.elementary.sideload package.
-# Copyright (C) 2019 THE io.elementary.sideload'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.elementary.sideload package.
+# Irish translations for io.github.teamcons.unboxing package.
+# Copyright (C) 2019 THE io.github.teamcons.unboxing'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.teamcons.unboxing package.
 # Automatically generated, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: io.elementary.sideload\n"
+"Project-Id-Version: io.github.teamcons.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
 "PO-Revision-Date: 2019-09-30 10:15-0700\n"

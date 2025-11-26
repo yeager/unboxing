@@ -15,7 +15,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Sideload.SuccessView : AbstractView {
+public class Unboxing.SuccessView : AbstractView {
     public enum SuccessType {
         INSTALLED,
         ALREADY_INSTALLED
@@ -34,9 +34,9 @@ public class Sideload.SuccessView : AbstractView {
     construct {
         badge.gicon = new ThemedIcon ("process-completed");
 
-        var app = (Sideload.Application) GLib.Application.get_default ();
+        var app = (unboxing.Application) GLib.Application.get_default ();
         var appstore_name = app.get_appstore_name ();
-        var file = ((Sideload.MainWindow) app.active_window).flatpak_file;
+        var file = ((unboxing.MainWindow) app.active_window).flatpak_file;
         string? secondary_label_string;
 
         if (view_type == SuccessType.INSTALLED) {
@@ -77,7 +77,7 @@ public class Sideload.SuccessView : AbstractView {
         var trash_check = new Gtk.CheckButton.with_label (_("Move ”%s” to Trash").printf (file.file.get_basename ()));
         content_area.attach (trash_check, 0, 0);
 
-        var settings = new Settings ("io.elementary.sideload");
+        var settings = new Settings ("io.github.teamcons.unboxing");
         settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
         var close_button = new Gtk.Button.with_label (_("Close"));
@@ -88,7 +88,7 @@ public class Sideload.SuccessView : AbstractView {
         button_box.append (close_button);
         button_box.append (open_button);
 
-        ((Sideload.MainWindow) app.active_window).default_widget = open_button;
+        ((unboxing.MainWindow) app.active_window).default_widget = open_button;
 
         close_button.clicked.connect (() => {
             if (trash_check.active) {

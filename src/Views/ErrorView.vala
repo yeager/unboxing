@@ -15,7 +15,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Sideload.ErrorView : AbstractView {
+public class Unboxing.ErrorView : AbstractView {
     public int error_code { get; construct; }
     public string error_message { get; construct; }
 

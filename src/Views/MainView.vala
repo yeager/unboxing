@@ -15,7 +15,7 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-public class Sideload.MainView : AbstractView {
+public class Unboxing.MainView : AbstractView {
     public signal void install_request ();
 
     public string app_name {
@@ -81,7 +81,7 @@ public class Sideload.MainView : AbstractView {
         repo_icon.add_css_class (Granite.STYLE_CLASS_ACCENT);
         repo_icon.add_css_class ("purple");
 
-        var appstore_name = ((Sideload.Application) GLib.Application.get_default ()).get_appstore_name ();
+        var appstore_name = ((unboxing.Application) GLib.Application.get_default ()).get_appstore_name ();
 
         repo_label = new Gtk.Label (_("Other apps from this distributor may appear in %s").printf (appstore_name));
         repo_label.selectable = true;

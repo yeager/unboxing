@@ -14,7 +14,7 @@ foreach i : icon_sizes
 endforeach
 
 i18n.merge_file(
-    input: 'sideload.desktop.in',
+    input: 'unboxing.desktop.in',
     output: meson.project_name() + '.desktop',
     po_dir: join_paths(meson.source_root(), 'po', 'extra'),
     type: 'desktop',
@@ -23,7 +23,7 @@ i18n.merge_file(
 )
 
 i18n.merge_file(
-    input: 'sideload.metainfo.xml.in',
+    input: 'unboxing.metainfo.xml.in',
     output: meson.project_name() + '.metainfo.xml',
     po_dir: meson.source_root() / 'po' / 'extra',
     type: 'xml',
@@ -32,7 +32,7 @@ i18n.merge_file(
 )
 
 install_data(
-    'sideload.gschema.xml',
+    'unboxing.gschema.xml',
     install_dir: join_paths(get_option('datadir'), 'glib-2.0', 'schemas'),
     rename: meson.project_name() + '.gschema.xml'
 )

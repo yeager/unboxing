@@ -18,7 +18,7 @@
 *
 */
 
-public abstract class Sideload.FlatpakFile : Object {
+public abstract class unboxing.FlatpakFile : Object {
     public File file { get; construct; }
 
     [Flags]

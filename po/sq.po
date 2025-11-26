@@ -1,17 +1,17 @@
-# Albanian translations for io.elementary.sideload package.
-# Copyright (C) 2019 THE io.elementary.sideload'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.elementary.sideload package.
+# Albanian translations for io.github.teamcons.unboxing package.
+# Copyright (C) 2019 THE io.github.teamcons.unboxing'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.teamcons.unboxing package.
 # Automatically generated, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: io.elementary.sideload\n"
+"Project-Id-Version: io.github.teamcons.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
 "PO-Revision-Date: 2024-08-06 23:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Albanian <https://l10n.elementary.io/projects/desktop/"
-"sideload/sq/>\n"
+"unboxing/sq/>\n"
 "Language: sq\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

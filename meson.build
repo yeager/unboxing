@@ -1,5 +1,5 @@
 project(
-    'io.elementary.sideload', 
+    'io.github.teamcons.unboxing', 
     'vala', 'c',
     version: '6.3.1',
     meson_version: '>= 0.59'
@@ -37,7 +37,7 @@ executable(
     'src/FlatpakRefFile.vala',
     'src/FlatpakBundleFile.vala',
     dependencies: [
-        dependency ('flatpak', version: '>=1.1.2'),
+        dependency('packagekit-glib2'),
         dependency ('glib-2.0'),
         dependency ('gobject-2.0'),
         dependency ('granite-7'),

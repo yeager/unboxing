@@ -18,7 +18,10 @@
 *
 */
 
-public class Sideload.Application : Gtk.Application {
+public class Unboxing.Application : Gtk.Application {
+
+    private Cancellable cancellable;
+
     public Application () {
         GLib.Intl.setlocale (LocaleCategory.ALL, "");
         GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
@@ -26,12 +29,12 @@ public class Sideload.Application : Gtk.Application {
         GLib.Intl.textdomain (GETTEXT_PACKAGE);
 
         Object (
-            application_id: "io.elementary.sideload",
+            application_id: "io.github.teamcons.unboxing",
             flags: ApplicationFlags.HANDLES_OPEN
         );
     }
 
-    protected override void open (File[] files, string hint) {
+    protected void old_open (File[] files, string hint) {
         if (files.length == 0) {
             return;
         }
@@ -47,7 +50,7 @@ public class Sideload.Application : Gtk.Application {
     }
 
     private async void open_file (File file) {
-        Sideload.MainWindow main_window = null;
+        unboxing.MainWindow main_window = null;
 
         main_window = new MainWindow (this, file);
         main_window.present ();
@@ -110,4 +113,62 @@ public class Sideload.Application : Gtk.Application {
         var app = new Application ();
         return app.run (args);
     }
+
+
+
+
+
+
+
+    protected override void open (File[] files, string hint) {
+        
+        this.hold();
+        var flags = Pk.Bitfield.from_enums (Pk.TransactionFlag.ALLOW_DOWNGRADE, Pk.TransactionFlag.ALLOW_REINSTALL, Pk.TransactionFlag.SIMULATE);
+
+        string[] filelist = {};
+        foreach (var file in files) {
+            filelist += file.get_path ();
+            print (file.get_path ());
+        }
+
+        var task = new Pk.Task ();
+        cancellable = new Cancellable ();
+
+        task.install_files_async.begin (
+                filelist,
+                cancellable,
+                progress_cb,
+                async_cb);
+    }
+
+    public void progress_cb (Pk.Progress progress, Pk.ProgressType type) {
+        print ("\n" + Unboxing.status_to_title (progress.status) + "|");
+        print ("ROLE: " + progress.get_role ().to_localised_present () + " | ");
+        print ("PERCENT: " + progress.percentage.to_string () + " | ");
+    }
+
+    // Delegate
+    public void async_cb(Object? object, AsyncResult res)
+    {
+        print ("cb called");
+        var task = object as Pk.Task;
+        assert_nonnull(task);
+
+    
+        try
+        {
+            var result = task.install_files_async.end(res);
+            print (result.role.to_localised_present () + "\n");
+            print (result.get_exit_code ().to_string () + "\n");
+            print ("finished lol");
+
+
+        }
+        catch (Error e)
+        {
+            print (e.message);
+        }
+    }
+
+
 }

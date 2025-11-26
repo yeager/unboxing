@@ -11,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: 2024-12-19 16:04+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/desktop/"
-"sideload-extra/uk/>\n"
+"unboxing-extra/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,18 +20,18 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.8.4\n"
 
-#: data/sideload.metainfo.xml.in:9 data/sideload.desktop.in:3
-msgid "Sideload"
+#: data/unboxing.metainfo.xml.in:9 data/unboxing.desktop.in:3
+msgid "unboxing"
 msgstr "Завантаження зі сторонніх джерел"
 
-#: data/sideload.metainfo.xml.in:10 data/sideload.desktop.in:4
+#: data/unboxing.metainfo.xml.in:10 data/unboxing.desktop.in:4
 msgid "Install apps downloaded from the Internet"
 msgstr "Встановлення завантажених з Інтернету застосунків"
 
-#: data/sideload.metainfo.xml.in:12
+#: data/unboxing.metainfo.xml.in:12
 msgid ""
-"Sideload Flatpak apps per user and automatically add their remotes to "
-"AppCenter. Sideload shows important information about apps before you "
+"unboxing Flatpak apps per user and automatically add their remotes to "
+"AppCenter. unboxing shows important information about apps before you "
 "install like their download size."
 msgstr ""
 "Завантажуйте сторонні застосунки Flatpak для кожного користувача та "
@@ -39,33 +39,33 @@ msgstr ""
 "переглянути важливі подробиці про застосунки перед встановленням, як-от "
 "їхній розмір завантаження."
 
-#: data/sideload.metainfo.xml.in:62 data/sideload.metainfo.xml.in:70
-#: data/sideload.metainfo.xml.in:83 data/sideload.metainfo.xml.in:97
-#: data/sideload.metainfo.xml.in:109
+#: data/unboxing.metainfo.xml.in:62 data/unboxing.metainfo.xml.in:70
+#: data/unboxing.metainfo.xml.in:83 data/unboxing.metainfo.xml.in:97
+#: data/unboxing.metainfo.xml.in:109
 msgid "Updated translations"
 msgstr "Оновлені переклади"
 
-#: data/sideload.metainfo.xml.in:82
+#: data/unboxing.metainfo.xml.in:82
 msgid "Show whether or not apps ask for advanced system permissions"
 msgstr "Показ, чи запитують застосунки розширені системні дозволи"
 
-#: data/sideload.metainfo.xml.in:95
+#: data/unboxing.metainfo.xml.in:95
 msgid "Use updated Flatpak branding"
 msgstr "Використано оновлений брендинг Flatpak"
 
-#: data/sideload.metainfo.xml.in:96
-msgid "Badge notifications with the sideloaded app's icon"
+#: data/unboxing.metainfo.xml.in:96
+msgid "Badge notifications with the unboxinged app's icon"
 msgstr "Значки сповіщень на піктограмах сторонніх застосунків"
 
-#: data/sideload.metainfo.xml.in:108
+#: data/unboxing.metainfo.xml.in:108
 msgid "Fix blurry app icon in multitasking view"
 msgstr "Виправлено розмитість піктограм застосунків у багатозадачному поданні"
 
-#: data/sideload.desktop.in:5
+#: data/unboxing.desktop.in:5
 msgid "Flatpak Installer"
 msgstr "Встановлювач Flatpak"
 
-#: data/sideload.desktop.in:8
+#: data/unboxing.desktop.in:8
 msgid "flatpak;"
 msgstr "flatpak;"
 
@@ -104,5 +104,5 @@ msgstr "flatpak;"
 #~ msgid "First release. Hello world!"
 #~ msgstr "Перший випуск. Привіт, світе!"
 
-#~ msgid "io.elementary.sideload"
-#~ msgstr "io.elementary.sideload"
+#~ msgid "io.github.teamcons.unboxing"
+#~ msgstr "io.github.teamcons.unboxing"

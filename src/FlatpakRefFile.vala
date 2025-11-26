@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.FlatpakRefFile : FlatpakFile {
+public class Unboxing.FlatpakRefFile : FlatpakFile {
     private Bytes? bytes = null;
     private KeyFile? key_file = null;
 

@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.MainWindow : Gtk.ApplicationWindow {
+public class Unboxing.MainWindow : Gtk.ApplicationWindow {
     private const string BUNDLE_CONTENT_TYPE = "application/vnd.flatpak";
     private const string REF_CONTENT_TYPE = "application/vnd.flatpak.ref";
     private const string FLATPAK_HTTPS_CONTENT_TYPE = "x-scheme-handler/flatpak+https";
@@ -44,7 +44,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     public MainWindow (Gtk.Application application, File file) {
         Object (
             application: application,
-            icon_name: "io.elementary.sideload",
+            icon_name: "io.github.teamcons.unboxing",
             resizable: false,
             title: _("Install Untrusted App"),
             file: file
@@ -52,7 +52,7 @@ public class Sideload.MainWindow : Gtk.ApplicationWindow {
     }
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("io.elementary.sideload") {
+        var image = new Gtk.Image.from_icon_name ("io.github.teamcons.unboxing") {
             pixel_size = 48,
             valign = Gtk.Align.START
         };

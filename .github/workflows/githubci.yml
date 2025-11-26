@@ -43,4 +43,4 @@ jobs:
     steps:
     - uses: actions/checkout@v6
     - name: Lint
-      run: io.elementary.vala-lint -d .
+      run: io.github.teamcons.vala-lint -d .

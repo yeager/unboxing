@@ -1,5 +1,5 @@
-# Sideload
-[![Translation status](https://l10n.elementary.io/widgets/desktop/-/sideload/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/?utm_source=widget)
+# unboxing
+[![Translation status](https://l10n.elementary.io/widgets/desktop/-/unboxing/svg-badge.svg)](https://l10n.elementary.io/engage/desktop/?utm_source=widget)
 
 Flatpak Installer
 
@@ -21,7 +21,7 @@ Run `meson build` to configure the build environment. Change to the build direct
     cd build
     ninja
 
-To install, use `ninja install`, then execute with `io.elementary.sideload`
+To install, use `ninja install`, then execute with `io.github.teamcons.unboxing`
 
     ninja install
-    io.elementary.sideload
+    io.github.teamcons.unboxing

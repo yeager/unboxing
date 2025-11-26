@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/io/elementary/sideload/" id="io.elementary.sideload" gettext-domain="io.elementary.sideload">
+  <schema path="/io/github/teamcons/unboxing/" id="io.github.teamcons.unboxing" gettext-domain="io.github.teamcons.unboxing">
     <key name="trash-on-success" type="b">
         <default>false</default>
         <summary>Trash on success.</summary>

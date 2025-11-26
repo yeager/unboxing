@@ -1,16 +1,16 @@
-# Hebrew translations for io.elementary.sideload package.
-# Copyright (C) 2019 THE io.elementary.sideload'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.elementary.sideload package.
+# Hebrew translations for io.github.teamcons.unboxing package.
+# Copyright (C) 2019 THE io.github.teamcons.unboxing'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.teamcons.unboxing package.
 # Automatically generated, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: io.elementary.sideload\n"
+"Project-Id-Version: io.github.teamcons.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-31 18:46+0000\n"
 "PO-Revision-Date: 2024-08-04 13:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/sideload/"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/desktop/unboxing/"
 "he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"

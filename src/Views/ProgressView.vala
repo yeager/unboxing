@@ -18,7 +18,7 @@
 *
 */
 
-public class Sideload.ProgressView : AbstractView {
+public class Unboxing.ProgressView : AbstractView {
     public enum ProgressType {
         BUNDLE_INSTALL,
         REF_INSTALL
