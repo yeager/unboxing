@@ -50,4 +50,8 @@ namespace Unboxing.Utils {
 
         return mimetype in Application.SUPPORTED_CONTENT_TYPES;
     }
+
+    public static unowned File[]? detected_in_downloads () {
+        return null;
+    }
 }

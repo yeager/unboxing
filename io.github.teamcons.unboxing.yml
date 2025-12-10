@@ -9,11 +9,14 @@ finish-args:
   - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
+  # Required to install packages
   - --socket=system-bus
-  - --share=network
   - --talk-name=org.freedesktop.PackageKit
   - --system-talk-name=org.freedesktop.Accounts
-  - --filesystem=home:ro
+  # Required to install dependencies
+  - --share=network
+  # Required to detect packages in Download, or drag&drop from there
+  - --filesystem=xdg-download
 
 cleanup:
   -  '/include'

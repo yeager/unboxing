@@ -25,7 +25,11 @@ public class Unboxing.Application : Gtk.Application {
         "application/vnd.debian.binary-package"
     };
 
-    private Unboxing.MainWindow? main_window;
+    private static Unboxing.MainWindow? main_window;
+    private static Unboxing.Welcome? welcome;
+
+    // Used for commandline option handling
+    public static bool welcome_requested = false;
 
     public Application () {
         GLib.Intl.setlocale (LocaleCategory.ALL, "");
@@ -59,13 +63,18 @@ public class Unboxing.Application : Gtk.Application {
     }
 
     protected override void activate () {
-
+        if (welcome_requested && welcome == null) {
+            welcome = new Unboxing.Welcome (this);
+            welcome.show ();
+            welcome.present ();
+            welcome_requested = false;
+        }
     }
 
     public static int main (string[] args) {
         if (args.length < 2) {
             print ("Usage: %s /path/to/flatpakref or /path/to/flatpak\n", args[0]);
-            return 1;
+            welcome_requested = true;
         }
 
         var app = new Application ();
