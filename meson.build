@@ -22,9 +22,16 @@ config_file = configure_file(
     configuration: config_data
 )
 
+gresource = gnome.compile_resources(
+    'gresource',
+    'data' / 'unboxing.gresource.xml',
+    source_dir: 'data'
+)
+
 executable(
     meson.project_name(),
     config_file,
+    gresource,
     'src/Utils/EnumToLocText.vala',
     'src/Utils/FileOperations.vala',
     'src/Views/AbstractView.vala',

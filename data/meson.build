@@ -13,19 +13,6 @@ foreach i : icon_sizes
     )
 endforeach
 
-foreach i : icon_sizes
-    install_data(
-        join_paths('icons', 'shield', i + '.svg'),
-        install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', i + 'x' + i, 'actions'),
-        rename: 'debian-shield.svg'
-    )
-    install_data(
-        join_paths('icons', 'shield', i + '.svg'),
-        install_dir: join_paths(get_option('datadir'), 'icons', 'hicolor', i + 'x' + i + '@2', 'actions'),
-        rename: 'debian-shield.svg'
-    )
-endforeach
-
 i18n.merge_file(
     input: 'unboxing.desktop.in',
     output: meson.project_name() + '.desktop',

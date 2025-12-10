@@ -6,10 +6,23 @@
   <project_license>GPL-3.0+</project_license>
   <translation type="gettext">io.github.teamcons.unboxing</translation>
 
-  <name>unboxing</name>
+  <name>Unboxing</name>
   <summary>Install apps downloaded from the Internet</summary>
   <description>
-    <p>unboxing Flatpak apps per user and automatically add their remotes to AppCenter. unboxing shows important information about apps before you install like their download size.</p>
+    <p>Handle for you the installation of downloaded Deb packages for Ubuntu and their dependencies.
+    Simply double-click, confirm, enter your password, and wait.
+
+    Note that while the app is intended to mirror Sideload, and thought as a fallback to install from deprecated packaging, it comes from a third party, and not from the elementary OS team.
+    Please do not file any issue related to this app and its use to them.
+
+    It may be more than enough for one single stray package, and to help out people uncomfortable with the terminal, but any more advanced function will be better served by the commandline.
+
+    Make sure to install only packages that are intended for your version of elementary OS or its underlying Ubuntu version, and which are not distributed in AppCenter
+    elementary OS 7: Ubuntu 22.04 LTS
+    elementary OS 8: Ubuntu 24.04 LTS
+
+    If you like this application please do not hesitate to do a donation. This takes a lot of time, and is done to help people.
+    </p>
   </description>
 
   <screenshots>
@@ -43,23 +56,20 @@
     <control>touch</control>
   </supports>
 
-  <url type="homepage">https://elementary.io/</url>
-  <url type="bugtracker">https://github.com/elementary/unboxing/issues</url>
-  <url type="donation">https://elementary.io/get-involved#funding</url>
-  <url type="help">https://github.com/elementary/unboxing/discussions</url>
-  <url type="translate">https://l10n.elementary.io/engage/desktop/</url>
+  <url type="homepage">https://github.com/teamcons/unboxing/</url>
+  <url type="bugtracker">https://github.com/teamcons/unboxing/issues</url>
+  <url type="donation">https://ko-fi.com/teamcons</url>
+  <url type="help">https://github.com/teamcons/unboxing/issues</url>
 
-  <developer id="org.elementaryos">
-    <name>elementary, Inc.</name>
+  <developer id="io.github.teamcons">
+    <name>Team Constellation</name>
   </developer>
-  <project_group>elementary</project_group>
-  <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
     <release version="1.0.0" date="2025-11-17" urgency="medium">
       <description>
         <ul>
-          <li>Updated translations</li>
+          <li>Initial release</li>
         </ul>
       </description>
     </release>
