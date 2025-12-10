@@ -26,7 +26,7 @@ public abstract class AbstractView : Gtk.Box {
     protected Gtk.Label secondary_label;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("io.github.teamcons.unboxing") {
+        var image = new Gtk.Image.from_icon_name ("shield") {
             pixel_size = 48,
             valign = Gtk.Align.START
         };

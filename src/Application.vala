@@ -20,11 +20,9 @@
 
 public class Unboxing.Application : Gtk.Application {
 
-    public const string XDEB = "application/x-deb";
-    public const string DEBPKG = "application/vnd.debian.binary-package";
     public const string[] SUPPORTED_CONTENT_TYPES = {
-        XDEB,
-        DEBPKG
+        "application/x-deb",
+        "application/vnd.debian.binary-package"
     };
 
     private Unboxing.MainWindow? main_window;

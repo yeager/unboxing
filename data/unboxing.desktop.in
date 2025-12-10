@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=unboxing
+Name=Unboxing
 Comment=Install apps downloaded from the Internet
 GenericName=Package Installer
 Exec=io.github.teamcons.unboxing %u
