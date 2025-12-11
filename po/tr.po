@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.teamcons.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2025-12-11 19:09+0100\n"
 "PO-Revision-Date: 2024-09-21 10:16+0000\n"
 "Last-Translator: Sinan Decron <sinanveyasinan@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/desktop/unboxing/"
@@ -19,246 +19,476 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.6.2\n"
 
-#: src/Views/ErrorView.vala:32
-msgid "Install failed"
+#: src/Views/ErrorView.vala:21
+#, fuzzy
+msgid "Installation failed"
 msgstr "Yüklenemedi"
 
-#: src/Views/ErrorView.vala:50
+#: src/Views/ErrorView.vala:38
 msgid "Details"
 msgstr "Ayrıntılar"
 
-#: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
+#: src/Views/ErrorView.vala:43 src/Views/SuccessView.vala:35
 msgid "Close"
 msgstr "Kapat"
 
-#: src/Views/ErrorView.vala:67
-msgid "This app is already installed."
-msgstr "Bu uygulama zaten yüklü."
-
-#: src/Views/ErrorView.vala:70
-msgid "A newer version of Flatpak is needed to install this app."
-msgstr "Bu uygulamayı yüklemek için daha yeni bir Flatpak sürümü gerekir."
-
-#: src/Views/ErrorView.vala:73
-msgid "A required Flatpak remote was not found."
-msgstr "Gerekli Flatpak uzak deposu bulunamadı."
-
-#: src/Views/ErrorView.vala:76
-msgid "A required runtime dependency could not be found."
-msgstr "Gerekli bir çalışma zamanı bağımlılığı bulunamadı."
-
-#: src/Views/ErrorView.vala:79
-msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr "Sağlanan .flatpakref dosyası geçerli görünmüyor."
-
-#: src/Views/ErrorView.vala:82
-msgid "The app is not signed with a trusted signature."
-msgstr "Uygulama, güvenilir bir imza ile imzalanmamış."
-
-#: src/Views/ErrorView.vala:85
-msgid "The application, runtime, or remote name is invalid."
-msgstr "Uygulama, çalışma zamanı veya uzak ad geçersiz."
-
-#: src/Views/ErrorView.vala:89
-msgid "An unknown error occurred."
-msgstr "Bilinmeyen bir hata oluştu."
-
-#: src/Views/MainView.vala:23
+#: src/Views/MainView.vala:13
 #, c-format
 msgid "Trust and install “%s”?"
 msgstr "“%s” uygulamasına güvenip yüklemek istiyor musunuz?"
 
-#: src/Views/MainView.vala:38
+#: src/Views/MainView.vala:26
 msgid "Trust and install this app?"
 msgstr "Bu uygulamaya güvenilip yüklensin mi?"
 
-#: src/Views/MainView.vala:40
+#: src/Views/MainView.vala:27
+#, fuzzy
 msgid ""
-"This app is provided solely by its developer and has not been reviewed by "
-"elementary for security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed for "
+"security, privacy, or system integration."
 msgstr ""
 "Bu uygulama yalnızca geliştiricisi tarafından sağlanır ve güvenlik, gizlilik "
 "veya sistem entegrasyonu için elementary tarafından incelenmemiştir."
 
-#: src/Views/MainView.vala:45
-msgid "Fetching details"
-msgstr "Ayrıntılar alınıyor"
-
-#: src/Views/MainView.vala:51
+#.
+#. var loading_spinner = new Gtk.Spinner ();
+#. loading_spinner.start ();
+#.
+#. var loading_label = new Gtk.Label (_("Fetching details"));
+#.
+#. var loading_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+#. loading_grid.append (loading_spinner);
+#. loading_grid.append (loading_label);
+#: src/Views/MainView.vala:38
 msgid "I understand"
 msgstr "Anlıyorum"
 
-#: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed by elementary"
+#: src/Views/MainView.vala:59
+msgid "Updates may need to be installed manually"
 msgstr ""
-"Bu uygulamanın güncellemeleri elementary tarafından gözden geçirilmeyecek"
 
-#: src/Views/MainView.vala:86
-#, c-format
-msgid "Other apps from this distributor may appear in %s"
-msgstr "Bu dağıtıcının diğer uygulamaları %s deposunda görünebilir"
-
-#: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:43
 msgid "Cancel"
 msgstr "İptal"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
 msgstr "Yine de Yükle"
 
-#: src/Views/MainView.vala:138
-#, c-format
-msgid "Install size may be up to %s"
-msgstr "Yükleme boyutu %s kadar olabilir"
-
-#: src/Views/MainView.vala:155
-#, c-format
-msgid "Download size may be up to %s"
-msgstr "İndirme boyutu %s kadar olabilir"
-
-#: src/Views/MainView.vala:157
-msgid "Unknown download size"
-msgstr "Bilinmeyen indirme boyutu"
-
-#: src/Views/MainView.vala:167
-msgid ""
-"Requests advanced permissions that could be used to violate your privacy or "
-"security"
+#: src/Views/MainView.vala:109
+msgid "Missing components will be downloaded and installed"
 msgstr ""
-"Gizliliğinizi veya güvenliğinizi ihlal etmek için kullanılabilecek gelişmiş "
-"izinler ister"
 
-#: src/Views/MainView.vala:178
-msgid ""
-"Requests file and folder permissions that could be used to violate your "
-"privacy"
-msgstr ""
-"Gizliliğinizi ihlal etmek için kullanılabilecek dosya ve klasör izinleri "
-"ister"
+#: src/Views/MainView.vala:113
+#, fuzzy
+msgid "Runs unsandboxed - Permissions cannot be changed"
+msgstr "İzinler %s yolundan değiştirilebilir"
 
-#: src/Views/MainView.vala:182
-msgid "Doesn't request advanced system permissions"
-msgstr "Gelişmiş sistem izinleri istemez"
-
-#: src/Views/ProgressView.vala:31
+#: src/Views/ProgressView.vala:13
 #, c-format
 msgid "Installing “%s”"
 msgstr "\"%s\" yükleniyor"
 
-#: src/Views/ProgressView.vala:55
+#: src/Views/ProgressView.vala:31
 msgid "Preparing…"
 msgstr "Hazırlanıyor…"
 
-#: src/Views/SuccessView.vala:44
+#. string? secondary_label_string;
+#: src/Views/SuccessView.vala:24
 #, c-format
 msgid "“%s” has been installed"
 msgstr "\"%s\" yüklendi"
 
-#: src/Views/SuccessView.vala:46
-msgid "The app has been installed"
-msgstr "Uygulama yüklendi"
-
-#: src/Views/SuccessView.vala:49
-msgid "Open it any time from the Applications Menu."
+#. secondary_label_string = _("Open it any time from the Applications Menu.");
+#: src/Views/SuccessView.vala:27
+#, fuzzy
+msgid "Applications will appear normally in the Applications Menu."
 msgstr "Uygulamalar Menüsünden istediğiniz zaman açın."
 
-#: src/Views/SuccessView.vala:53
-#, c-format
-msgid "“%s” is already installed"
-msgstr "\"%s\" zaten yüklü"
-
-#: src/Views/SuccessView.vala:55
-msgid "This app is already installed"
-msgstr "Bu uygulama zaten yüklü"
-
-#: src/Views/SuccessView.vala:58
-msgid "No changes were made."
-msgstr "Hiçbir değişiklik yapılmadı."
-
-#: src/Views/SuccessView.vala:63
-#, c-format
-msgid "Visit %s for app information, updates, and to uninstall."
-msgstr ""
-"Uygulama bilgileri, güncellemeler ve yüklemeyi kaldırmak için %s "
-"uygulamasını ziyaret edin."
-
-#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
-#: src/Views/SuccessView.vala:69
-msgid "System Settings → Applications…"
-msgstr "Sistem Ayarları → Uygulamalar…"
-
-#: src/Views/SuccessView.vala:73
-#, c-format
-msgid "Permissions can be changed in %s"
-msgstr "İzinler %s yolundan değiştirilebilir"
-
-#: src/Views/SuccessView.vala:77
+#: src/Views/SuccessView.vala:29
 #, c-format
 msgid "Move ”%s” to Trash"
 msgstr "”%s” Dosyasını Çöpe Taşı"
 
-#: src/Views/SuccessView.vala:85
-msgid "Open App"
-msgstr "Uygulamayı Aç"
-
-#: src/Application.vala:100
-msgid "your software center"
-msgstr "yazılım merkeziniz"
-
-#: src/MainWindow.vala:47
-msgid "Install Untrusted App"
+#: src/Welcome.vala:13 src/MainWindow.vala:25
+#, fuzzy
+msgid "Install Untrusted Package"
 msgstr "Güvenilmeyen Uygulamayı Yükle"
 
-#: src/MainWindow.vala:99
-#, c-format
-msgid "Failed to download file from %s"
-msgstr "%s'den dosya indirilemedi"
+#: src/Welcome.vala:18
+msgid "Unboxing"
+msgstr ""
 
-#: src/MainWindow.vala:106
-#, c-format
-msgid "Failed to download file from %s: %s"
-msgstr "%s:%s'den dosya indirilemedi"
+#: src/Welcome.vala:32
+msgid "Install Debian Package"
+msgstr ""
 
-#: src/MainWindow.vala:123
-#, c-format
-msgid "Unable to query content type of provided file: %s"
-msgstr "Sağlanan dosyanın içerik türü sorgulanamıyor: %s"
+#: src/Welcome.vala:33
+msgid ""
+"Debian packages are a legacy format to distribute applications and system "
+"components"
+msgstr ""
 
-#: src/MainWindow.vala:131 src/MainWindow.vala:140
-msgid "Unable to query content type of provided file"
-msgstr "Sağlanan dosyanın içerik türü sorgulanamıyor"
+#: src/Welcome.vala:47
+msgid "Select a file to open"
+msgstr ""
 
-#: src/MainWindow.vala:148
-msgid "This does not appear to be a valid flatpak/flatpakref file"
+#: src/Welcome.vala:48
+msgid "Browse to open a single file"
+msgstr ""
+
+#: src/Welcome.vala:73
+#, fuzzy, c-format
+msgid "Open %s"
+msgstr "Uygulamayı Aç"
+
+#. -------- --------
+#: src/Welcome.vala:83
+msgid "Support us!"
+msgstr ""
+
+#: src/Welcome.vala:109
+#, fuzzy
+msgid "All files"
+msgstr "Yüklenemedi"
+
+#: src/Welcome.vala:114
+msgid "Deb packages"
+msgstr ""
+
+#: src/Welcome.vala:128
+#, fuzzy
+msgid "Open"
+msgstr "Uygulamayı Aç"
+
+#: src/Welcome.vala:136
+msgid "Package"
+msgstr ""
+
+#: src/MainWindow.vala:65
+#, fuzzy
+msgid "This does not appear to be a valid package file"
 msgstr "Bu geçerli bir flatpak/flatpakref dosyası gibi görünmüyor"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:66
 #, c-format
-msgid "Installing %s. Unable to estimate time remaining."
-msgstr "%s yükleniyor. Kalan süre tahmin edilemiyor."
+msgid "%s does not belong to supported mimetypes"
+msgstr ""
 
-#: src/MainWindow.vala:262
-msgid "App installed"
+#: src/MainWindow.vala:87
+msgid "There Are ongoing operations"
+msgstr ""
+
+#: src/MainWindow.vala:88
+msgid "Please wait until all operations are finished"
+msgstr ""
+
+#: src/MainWindow.vala:136
+#, fuzzy
+msgid "Package installed"
 msgstr "Uygulama yüklendi"
 
-#: src/MainWindow.vala:264
+#: src/MainWindow.vala:137
 #, c-format
 msgid "Installed “%s”"
 msgstr "\"%s\" yüklendi"
 
-#: src/MainWindow.vala:266
-msgid "The app was installed"
-msgstr "Uygulama yüklendi"
+#: src/Utils/EnumToLocText.vala:13
+msgid "Starting"
+msgstr ""
 
-#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
-#: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
-msgid "Did not find suitable Flatpak installation."
-msgstr "Uygun Flatpak kurulumu bulunamadı."
+#: src/Utils/EnumToLocText.vala:15
+msgid "Waiting"
+msgstr ""
 
-#: src/FlatpakBundleFile.vala:38
+#: src/Utils/EnumToLocText.vala:17
+msgid "Running"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:19
+msgid "Querying"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:21
+msgid "Getting information"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:23
+msgid "Removing packages"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:25
+msgid "Downloading"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:27
+msgid "Refreshing software list"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:29
+#, fuzzy
+msgid "Installing updates"
+msgstr "\"%s\" yükleniyor"
+
+#: src/Utils/EnumToLocText.vala:31
+msgid "Cleaning up packages"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:33
+msgid "Obsoleting packages"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:35
+msgid "Resolving dependencies"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:37
+msgid "Checking signatures"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:39
+msgid "Testing changes"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:41
+msgid "Committing changes"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:43
+msgid "Requesting data"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:45
+msgid "Finished"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:47
+#, fuzzy
+msgid "Cancelling"
+msgstr "İptal"
+
+#: src/Utils/EnumToLocText.vala:49
+msgid "Downloading repository information"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:51
+msgid "Downloading list of packages"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:53
+msgid "Downloading file lists"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:55
+msgid "Downloading lists of changes"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:57
+msgid "Downloading groups"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:59
+msgid "Downloading update information"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:61
+msgid "Repackaging files"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:63
+msgid "Loading cache"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:65
+#, fuzzy
+msgid "Scanning applications"
+msgstr "Uygulamalar"
+
+#: src/Utils/EnumToLocText.vala:67
+msgid "Generating package lists"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:69
+msgid "Waiting for package manager lock"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:71
+msgid "Waiting for authentication"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:73
+msgid "Updating running applications"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:75
+msgid "Checking applications in use"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:77
+msgid "Checking libraries in use"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:79
+msgid "Copying files"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:82
+#, fuzzy
+msgid "Installing"
+msgstr "Yükle"
+
+#: src/Utils/EnumToLocText.vala:90
+msgid "Cannot start daemon"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:92
+msgid "Declined interaction"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:94
+msgid "Declined sim"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:96
+msgid "Failed"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:98
+msgid "Auth fail"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:100
+msgid "File bad"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:102
+msgid "Input bad"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:104
+msgid "Not supported"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:106
+msgid "idk, client error"
+msgstr ""
+
+#~ msgid "This app is already installed."
+#~ msgstr "Bu uygulama zaten yüklü."
+
+#~ msgid "A newer version of Flatpak is needed to install this app."
+#~ msgstr "Bu uygulamayı yüklemek için daha yeni bir Flatpak sürümü gerekir."
+
+#~ msgid "A required Flatpak remote was not found."
+#~ msgstr "Gerekli Flatpak uzak deposu bulunamadı."
+
+#~ msgid "A required runtime dependency could not be found."
+#~ msgstr "Gerekli bir çalışma zamanı bağımlılığı bulunamadı."
+
+#~ msgid "The supplied .flatpakref file does not seem to be valid."
+#~ msgstr "Sağlanan .flatpakref dosyası geçerli görünmüyor."
+
+#~ msgid "The app is not signed with a trusted signature."
+#~ msgstr "Uygulama, güvenilir bir imza ile imzalanmamış."
+
+#~ msgid "The application, runtime, or remote name is invalid."
+#~ msgstr "Uygulama, çalışma zamanı veya uzak ad geçersiz."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Bilinmeyen bir hata oluştu."
+
+#~ msgid "Fetching details"
+#~ msgstr "Ayrıntılar alınıyor"
+
+#~ msgid "Updates to this app will not be reviewed by elementary"
+#~ msgstr ""
+#~ "Bu uygulamanın güncellemeleri elementary tarafından gözden geçirilmeyecek"
+
 #, c-format
-msgid "Error constructing Flatpak bundle: %s"
-msgstr "Flatpak paketi oluşturulurken hata oluştu: %s"
+#~ msgid "Other apps from this distributor may appear in %s"
+#~ msgstr "Bu dağıtıcının diğer uygulamaları %s deposunda görünebilir"
+
+#, c-format
+#~ msgid "Install size may be up to %s"
+#~ msgstr "Yükleme boyutu %s kadar olabilir"
+
+#, c-format
+#~ msgid "Download size may be up to %s"
+#~ msgstr "İndirme boyutu %s kadar olabilir"
+
+#~ msgid "Unknown download size"
+#~ msgstr "Bilinmeyen indirme boyutu"
+
+#~ msgid ""
+#~ "Requests advanced permissions that could be used to violate your privacy "
+#~ "or security"
+#~ msgstr ""
+#~ "Gizliliğinizi veya güvenliğinizi ihlal etmek için kullanılabilecek "
+#~ "gelişmiş izinler ister"
+
+#~ msgid ""
+#~ "Requests file and folder permissions that could be used to violate your "
+#~ "privacy"
+#~ msgstr ""
+#~ "Gizliliğinizi ihlal etmek için kullanılabilecek dosya ve klasör izinleri "
+#~ "ister"
+
+#~ msgid "Doesn't request advanced system permissions"
+#~ msgstr "Gelişmiş sistem izinleri istemez"
+
+#~ msgid "The app has been installed"
+#~ msgstr "Uygulama yüklendi"
+
+#, c-format
+#~ msgid "“%s” is already installed"
+#~ msgstr "\"%s\" zaten yüklü"
+
+#~ msgid "This app is already installed"
+#~ msgstr "Bu uygulama zaten yüklü"
+
+#~ msgid "No changes were made."
+#~ msgstr "Hiçbir değişiklik yapılmadı."
+
+#, c-format
+#~ msgid "Visit %s for app information, updates, and to uninstall."
+#~ msgstr ""
+#~ "Uygulama bilgileri, güncellemeler ve yüklemeyi kaldırmak için %s "
+#~ "uygulamasını ziyaret edin."
+
+#~ msgid "System Settings → Applications…"
+#~ msgstr "Sistem Ayarları → Uygulamalar…"
+
+#~ msgid "your software center"
+#~ msgstr "yazılım merkeziniz"
+
+#, c-format
+#~ msgid "Failed to download file from %s"
+#~ msgstr "%s'den dosya indirilemedi"
+
+#, c-format
+#~ msgid "Failed to download file from %s: %s"
+#~ msgstr "%s:%s'den dosya indirilemedi"
+
+#, c-format
+#~ msgid "Unable to query content type of provided file: %s"
+#~ msgstr "Sağlanan dosyanın içerik türü sorgulanamıyor: %s"
+
+#~ msgid "Unable to query content type of provided file"
+#~ msgstr "Sağlanan dosyanın içerik türü sorgulanamıyor"
+
+#, c-format
+#~ msgid "Installing %s. Unable to estimate time remaining."
+#~ msgstr "%s yükleniyor. Kalan süre tahmin edilemiyor."
+
+#~ msgid "The app was installed"
+#~ msgstr "Uygulama yüklendi"
+
+#~ msgid "Did not find suitable Flatpak installation."
+#~ msgstr "Uygun Flatpak kurulumu bulunamadı."
+
+#, c-format
+#~ msgid "Error constructing Flatpak bundle: %s"
+#~ msgstr "Flatpak paketi oluşturulurken hata oluştu: %s"
 
 #, c-format
 #~ msgid "Install untrusted app “%s”?"
@@ -282,9 +512,6 @@ msgstr "Flatpak paketi oluşturulurken hata oluştu: %s"
 #~ "bilgileri, güncellemeler ve kaldırmak için %s uygulamasını ziyaret edin. "
 #~ "İzinleri <a href='%s'>%s → %s…</a> yolundan değiştirilebilirziniz"
 
-#~ msgid "Applications"
-#~ msgstr "Uygulamalar"
-
 #~ msgid ""
 #~ "No changes were made. Visit %s for app information, updates, and to "
 #~ "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
@@ -303,6 +530,3 @@ msgstr "Flatpak paketi oluşturulurken hata oluştu: %s"
 #, fuzzy
 #~ msgid "%s has been successfully installed"
 #~ msgstr "Yazılım yüklendi"
-
-#~ msgid "Install"
-#~ msgstr "Yükle"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.teamcons.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-31 18:46+0000\n"
+"POT-Creation-Date: 2025-12-11 19:09+0100\n"
 "PO-Revision-Date: 2025-10-30 18:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/desktop/"
@@ -19,242 +19,471 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.11.4\n"
 
-#: src/Views/ErrorView.vala:32
-msgid "Install failed"
+#: src/Views/ErrorView.vala:21
+#, fuzzy
+msgid "Installation failed"
 msgstr "Installationen misslyckades"
 
-#: src/Views/ErrorView.vala:50
+#: src/Views/ErrorView.vala:38
 msgid "Details"
 msgstr "Detaljer"
 
-#: src/Views/ErrorView.vala:55 src/Views/SuccessView.vala:83
+#: src/Views/ErrorView.vala:43 src/Views/SuccessView.vala:35
 msgid "Close"
 msgstr "Stäng"
 
-#: src/Views/ErrorView.vala:67
-msgid "This app is already installed."
-msgstr "Den här appen är redan installerad."
-
-#: src/Views/ErrorView.vala:70
-msgid "A newer version of Flatpak is needed to install this app."
-msgstr "En nyare version av Flatpak krävs för att installera den här appen."
-
-#: src/Views/ErrorView.vala:73
-msgid "A required Flatpak remote was not found."
-msgstr "En nödvändig Flatpak-fjärrserver hittades inte."
-
-#: src/Views/ErrorView.vala:76
-msgid "A required runtime dependency could not be found."
-msgstr "Ett nödvändigt körtidsberoende kunde inte hittas."
-
-#: src/Views/ErrorView.vala:79
-msgid "The supplied .flatpakref file does not seem to be valid."
-msgstr "Den medföljande .flatpakref-filen verkar inte vara giltig."
-
-#: src/Views/ErrorView.vala:82
-msgid "The app is not signed with a trusted signature."
-msgstr "Appen är inte signerad med en betrodd signatur."
-
-#: src/Views/ErrorView.vala:85
-msgid "The application, runtime, or remote name is invalid."
-msgstr "Namnet på programmet, körtiden eller fjärrservern är ogiltigt."
-
-#: src/Views/ErrorView.vala:89
-msgid "An unknown error occurred."
-msgstr "Ett okänt fel uppstod."
-
-#: src/Views/MainView.vala:23
+#: src/Views/MainView.vala:13
 #, c-format
 msgid "Trust and install “%s”?"
 msgstr "Lita på och installera \"%s\"?"
 
-#: src/Views/MainView.vala:38
+#: src/Views/MainView.vala:26
 msgid "Trust and install this app?"
 msgstr "Lita på och installera den här appen?"
 
-#: src/Views/MainView.vala:40
+#: src/Views/MainView.vala:27
+#, fuzzy
 msgid ""
-"This app is provided solely by its developer and has not been reviewed by "
-"elementary for security, privacy, or system integration."
+"This app is provided solely by its developer and has not been reviewed for "
+"security, privacy, or system integration."
 msgstr ""
 "Denna app tillhandahålls enbart av dess utvecklare och har inte granskats av "
 "elementary med avseende på säkerhet, integritet eller systemintegration."
 
-#: src/Views/MainView.vala:45
-msgid "Fetching details"
-msgstr "Hämtar detaljer"
-
-#: src/Views/MainView.vala:51
+#.
+#. var loading_spinner = new Gtk.Spinner ();
+#. loading_spinner.start ();
+#.
+#. var loading_label = new Gtk.Label (_("Fetching details"));
+#.
+#. var loading_grid = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
+#. loading_grid.append (loading_spinner);
+#. loading_grid.append (loading_label);
+#: src/Views/MainView.vala:38
 msgid "I understand"
 msgstr "Jag förstår"
 
-#: src/Views/MainView.vala:72
-msgid "Updates to this app will not be reviewed by elementary"
-msgstr "Uppdateringar av denna app kommer inte att granskas av elementary"
+#: src/Views/MainView.vala:59
+msgid "Updates may need to be installed manually"
+msgstr ""
 
-#: src/Views/MainView.vala:86
-#, c-format
-msgid "Other apps from this distributor may appear in %s"
-msgstr "Andra appar från denna distributör kan förekomma i %s"
-
-#: src/Views/MainView.vala:120 src/Views/ProgressView.vala:69
+#: src/Views/MainView.vala:93 src/Views/ProgressView.vala:43
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/Views/MainView.vala:123
+#: src/Views/MainView.vala:96
 msgid "Install Anyway"
 msgstr "Installera ändå"
 
-#: src/Views/MainView.vala:138
-#, c-format
-msgid "Install size may be up to %s"
-msgstr "Installationsstorleken kan vara upp till %s"
-
-#: src/Views/MainView.vala:155
-#, c-format
-msgid "Download size may be up to %s"
-msgstr "Nedladdningsstorleken kan vara upp till %s"
-
-#: src/Views/MainView.vala:157
-msgid "Unknown download size"
-msgstr "Okänd nedladdningsstorlek"
-
-#: src/Views/MainView.vala:167
-msgid ""
-"Requests advanced permissions that could be used to violate your privacy or "
-"security"
+#: src/Views/MainView.vala:109
+msgid "Missing components will be downloaded and installed"
 msgstr ""
-"Begär avancerade behörigheter som kan användas för att kränka din integritet "
-"eller säkerhet"
 
-#: src/Views/MainView.vala:178
-msgid ""
-"Requests file and folder permissions that could be used to violate your "
-"privacy"
-msgstr ""
-"Begär fil- och mappbehörigheter som kan användas för att kränka din "
-"integritet"
+#: src/Views/MainView.vala:113
+#, fuzzy
+msgid "Runs unsandboxed - Permissions cannot be changed"
+msgstr "Behörigheter kan ändras i %s"
 
-#: src/Views/MainView.vala:182
-msgid "Doesn't request advanced system permissions"
-msgstr "Kräver inte avancerade systembehörigheter"
-
-#: src/Views/ProgressView.vala:31
+#: src/Views/ProgressView.vala:13
 #, c-format
 msgid "Installing “%s”"
 msgstr "Installerar \"%s\""
 
-#: src/Views/ProgressView.vala:55
+#: src/Views/ProgressView.vala:31
 msgid "Preparing…"
 msgstr "Förbereder…"
 
-#: src/Views/SuccessView.vala:44
+#. string? secondary_label_string;
+#: src/Views/SuccessView.vala:24
 #, c-format
 msgid "“%s” has been installed"
 msgstr "\"%s\" har installerats"
 
-#: src/Views/SuccessView.vala:46
-msgid "The app has been installed"
-msgstr "Appen har installerats"
-
-#: src/Views/SuccessView.vala:49
-msgid "Open it any time from the Applications Menu."
+#. secondary_label_string = _("Open it any time from the Applications Menu.");
+#: src/Views/SuccessView.vala:27
+#, fuzzy
+msgid "Applications will appear normally in the Applications Menu."
 msgstr "Öppna den när som helst från programmenyn."
 
-#: src/Views/SuccessView.vala:53
-#, c-format
-msgid "“%s” is already installed"
-msgstr "\"%s\" är redan installerat"
-
-#: src/Views/SuccessView.vala:55
-msgid "This app is already installed"
-msgstr "Den här appen är redan installerad"
-
-#: src/Views/SuccessView.vala:58
-msgid "No changes were made."
-msgstr "Inga förändringar gjordes."
-
-#: src/Views/SuccessView.vala:63
-#, c-format
-msgid "Visit %s for app information, updates, and to uninstall."
-msgstr ""
-"Besök %s för information om appen, uppdateringar och för att avinstallera "
-"den."
-
-#. / TRANSLATORS: "System Settings" is related to the title of https://github.com/elementary/switchboard, "Applications" is related to the title of https://github.com/elementary/switchboard-plug-applications. Note that this includes an ellipsis (…) in English to signify the action will be performed in a new window.
-#: src/Views/SuccessView.vala:69
-msgid "System Settings → Applications…"
-msgstr "Systeminställningar → Program…"
-
-#: src/Views/SuccessView.vala:73
-#, c-format
-msgid "Permissions can be changed in %s"
-msgstr "Behörigheter kan ändras i %s"
-
-#: src/Views/SuccessView.vala:77
+#: src/Views/SuccessView.vala:29
 #, c-format
 msgid "Move ”%s” to Trash"
 msgstr "Flytta \"%s\" till papperskorgen"
 
-#: src/Views/SuccessView.vala:85
-msgid "Open App"
-msgstr "Öppna app"
-
-#: src/Application.vala:100
-msgid "your software center"
-msgstr "ditt programvarucenter"
-
-#: src/MainWindow.vala:47
-msgid "Install Untrusted App"
+#: src/Welcome.vala:13 src/MainWindow.vala:25
+#, fuzzy
+msgid "Install Untrusted Package"
 msgstr "Installera en icke-betrodd app"
 
-#: src/MainWindow.vala:99
-#, c-format
-msgid "Failed to download file from %s"
-msgstr "Misslyckades med att ladda ner fil från %s"
+#: src/Welcome.vala:18
+msgid "Unboxing"
+msgstr ""
 
-#: src/MainWindow.vala:106
-#, c-format
-msgid "Failed to download file from %s: %s"
-msgstr "Misslyckades med att ladda ner fil från %s: %s"
+#: src/Welcome.vala:32
+msgid "Install Debian Package"
+msgstr ""
 
-#: src/MainWindow.vala:123
-#, c-format
-msgid "Unable to query content type of provided file: %s"
-msgstr "Det går inte att fråga efter innehållstyp för den angivna filen: %s"
+#: src/Welcome.vala:33
+msgid ""
+"Debian packages are a legacy format to distribute applications and system "
+"components"
+msgstr ""
 
-#: src/MainWindow.vala:131 src/MainWindow.vala:140
-msgid "Unable to query content type of provided file"
-msgstr "Det går inte att fråga efter innehållstyp för den angivna filen"
+#: src/Welcome.vala:47
+msgid "Select a file to open"
+msgstr ""
 
-#: src/MainWindow.vala:148
-msgid "This does not appear to be a valid flatpak/flatpakref file"
+#: src/Welcome.vala:48
+msgid "Browse to open a single file"
+msgstr ""
+
+#: src/Welcome.vala:73
+#, fuzzy, c-format
+msgid "Open %s"
+msgstr "Öppna app"
+
+#. -------- --------
+#: src/Welcome.vala:83
+msgid "Support us!"
+msgstr ""
+
+#: src/Welcome.vala:109
+#, fuzzy
+msgid "All files"
+msgstr "Installationen misslyckades"
+
+#: src/Welcome.vala:114
+msgid "Deb packages"
+msgstr ""
+
+#: src/Welcome.vala:128
+#, fuzzy
+msgid "Open"
+msgstr "Öppna app"
+
+#: src/Welcome.vala:136
+msgid "Package"
+msgstr ""
+
+#: src/MainWindow.vala:65
+#, fuzzy
+msgid "This does not appear to be a valid package file"
 msgstr "Detta verkar inte vara en giltig flatpak/flatpakref-fil"
 
-#: src/MainWindow.vala:172
+#: src/MainWindow.vala:66
 #, c-format
-msgid "Installing %s. Unable to estimate time remaining."
-msgstr "Installerar %s. Det går inte att uppskatta återstående tid."
+msgid "%s does not belong to supported mimetypes"
+msgstr ""
 
-#: src/MainWindow.vala:262
-msgid "App installed"
+#: src/MainWindow.vala:87
+msgid "There Are ongoing operations"
+msgstr ""
+
+#: src/MainWindow.vala:88
+msgid "Please wait until all operations are finished"
+msgstr ""
+
+#: src/MainWindow.vala:136
+#, fuzzy
+msgid "Package installed"
 msgstr "App installerad"
 
-#: src/MainWindow.vala:264
+#: src/MainWindow.vala:137
 #, c-format
 msgid "Installed “%s”"
 msgstr "Installerade \"%s\""
 
-#: src/MainWindow.vala:266
-msgid "The app was installed"
-msgstr "Appen installerades"
+#: src/Utils/EnumToLocText.vala:13
+msgid "Starting"
+msgstr ""
 
-#: src/FlatpakRefFile.vala:125 src/FlatpakRefFile.vala:240
-#: src/FlatpakBundleFile.vala:58 src/FlatpakBundleFile.vala:159
-msgid "Did not find suitable Flatpak installation."
-msgstr "Hittade ingen lämplig Flatpak-installation."
+#: src/Utils/EnumToLocText.vala:15
+msgid "Waiting"
+msgstr ""
 
-#: src/FlatpakBundleFile.vala:38
+#: src/Utils/EnumToLocText.vala:17
+msgid "Running"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:19
+msgid "Querying"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:21
+msgid "Getting information"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:23
+msgid "Removing packages"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:25
+msgid "Downloading"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:27
+msgid "Refreshing software list"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:29
+#, fuzzy
+msgid "Installing updates"
+msgstr "Installerar \"%s\""
+
+#: src/Utils/EnumToLocText.vala:31
+msgid "Cleaning up packages"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:33
+msgid "Obsoleting packages"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:35
+msgid "Resolving dependencies"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:37
+msgid "Checking signatures"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:39
+msgid "Testing changes"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:41
+msgid "Committing changes"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:43
+msgid "Requesting data"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:45
+msgid "Finished"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:47
+#, fuzzy
+msgid "Cancelling"
+msgstr "Avbryt"
+
+#: src/Utils/EnumToLocText.vala:49
+msgid "Downloading repository information"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:51
+msgid "Downloading list of packages"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:53
+msgid "Downloading file lists"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:55
+msgid "Downloading lists of changes"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:57
+msgid "Downloading groups"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:59
+msgid "Downloading update information"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:61
+msgid "Repackaging files"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:63
+msgid "Loading cache"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:65
+msgid "Scanning applications"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:67
+msgid "Generating package lists"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:69
+msgid "Waiting for package manager lock"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:71
+msgid "Waiting for authentication"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:73
+msgid "Updating running applications"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:75
+msgid "Checking applications in use"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:77
+msgid "Checking libraries in use"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:79
+msgid "Copying files"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:82
+#, fuzzy
+msgid "Installing"
+msgstr "Installerar \"%s\""
+
+#: src/Utils/EnumToLocText.vala:90
+msgid "Cannot start daemon"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:92
+msgid "Declined interaction"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:94
+msgid "Declined sim"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:96
+msgid "Failed"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:98
+msgid "Auth fail"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:100
+msgid "File bad"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:102
+msgid "Input bad"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:104
+msgid "Not supported"
+msgstr ""
+
+#: src/Utils/EnumToLocText.vala:106
+msgid "idk, client error"
+msgstr ""
+
+#~ msgid "This app is already installed."
+#~ msgstr "Den här appen är redan installerad."
+
+#~ msgid "A newer version of Flatpak is needed to install this app."
+#~ msgstr "En nyare version av Flatpak krävs för att installera den här appen."
+
+#~ msgid "A required Flatpak remote was not found."
+#~ msgstr "En nödvändig Flatpak-fjärrserver hittades inte."
+
+#~ msgid "A required runtime dependency could not be found."
+#~ msgstr "Ett nödvändigt körtidsberoende kunde inte hittas."
+
+#~ msgid "The supplied .flatpakref file does not seem to be valid."
+#~ msgstr "Den medföljande .flatpakref-filen verkar inte vara giltig."
+
+#~ msgid "The app is not signed with a trusted signature."
+#~ msgstr "Appen är inte signerad med en betrodd signatur."
+
+#~ msgid "The application, runtime, or remote name is invalid."
+#~ msgstr "Namnet på programmet, körtiden eller fjärrservern är ogiltigt."
+
+#~ msgid "An unknown error occurred."
+#~ msgstr "Ett okänt fel uppstod."
+
+#~ msgid "Fetching details"
+#~ msgstr "Hämtar detaljer"
+
+#~ msgid "Updates to this app will not be reviewed by elementary"
+#~ msgstr "Uppdateringar av denna app kommer inte att granskas av elementary"
+
 #, c-format
-msgid "Error constructing Flatpak bundle: %s"
-msgstr "Fel vid konstruktion av Flatpak-bundle: %s"
+#~ msgid "Other apps from this distributor may appear in %s"
+#~ msgstr "Andra appar från denna distributör kan förekomma i %s"
+
+#, c-format
+#~ msgid "Install size may be up to %s"
+#~ msgstr "Installationsstorleken kan vara upp till %s"
+
+#, c-format
+#~ msgid "Download size may be up to %s"
+#~ msgstr "Nedladdningsstorleken kan vara upp till %s"
+
+#~ msgid "Unknown download size"
+#~ msgstr "Okänd nedladdningsstorlek"
+
+#~ msgid ""
+#~ "Requests advanced permissions that could be used to violate your privacy "
+#~ "or security"
+#~ msgstr ""
+#~ "Begär avancerade behörigheter som kan användas för att kränka din "
+#~ "integritet eller säkerhet"
+
+#~ msgid ""
+#~ "Requests file and folder permissions that could be used to violate your "
+#~ "privacy"
+#~ msgstr ""
+#~ "Begär fil- och mappbehörigheter som kan användas för att kränka din "
+#~ "integritet"
+
+#~ msgid "Doesn't request advanced system permissions"
+#~ msgstr "Kräver inte avancerade systembehörigheter"
+
+#~ msgid "The app has been installed"
+#~ msgstr "Appen har installerats"
+
+#, c-format
+#~ msgid "“%s” is already installed"
+#~ msgstr "\"%s\" är redan installerat"
+
+#~ msgid "This app is already installed"
+#~ msgstr "Den här appen är redan installerad"
+
+#~ msgid "No changes were made."
+#~ msgstr "Inga förändringar gjordes."
+
+#, c-format
+#~ msgid "Visit %s for app information, updates, and to uninstall."
+#~ msgstr ""
+#~ "Besök %s för information om appen, uppdateringar och för att avinstallera "
+#~ "den."
+
+#~ msgid "System Settings → Applications…"
+#~ msgstr "Systeminställningar → Program…"
+
+#~ msgid "your software center"
+#~ msgstr "ditt programvarucenter"
+
+#, c-format
+#~ msgid "Failed to download file from %s"
+#~ msgstr "Misslyckades med att ladda ner fil från %s"
+
+#, c-format
+#~ msgid "Failed to download file from %s: %s"
+#~ msgstr "Misslyckades med att ladda ner fil från %s: %s"
+
+#, c-format
+#~ msgid "Unable to query content type of provided file: %s"
+#~ msgstr "Det går inte att fråga efter innehållstyp för den angivna filen: %s"
+
+#~ msgid "Unable to query content type of provided file"
+#~ msgstr "Det går inte att fråga efter innehållstyp för den angivna filen"
+
+#, c-format
+#~ msgid "Installing %s. Unable to estimate time remaining."
+#~ msgstr "Installerar %s. Det går inte att uppskatta återstående tid."
+
+#~ msgid "The app was installed"
+#~ msgstr "Appen installerades"
+
+#~ msgid "Did not find suitable Flatpak installation."
+#~ msgstr "Hittade ingen lämplig Flatpak-installation."
+
+#, c-format
+#~ msgid "Error constructing Flatpak bundle: %s"
+#~ msgstr "Fel vid konstruktion av Flatpak-bundle: %s"

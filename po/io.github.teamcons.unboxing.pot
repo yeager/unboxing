@@ -1,54 +1,48 @@
-# Norwegian Nynorsk translations for io.github.teamcons.unboxing package.
-# Copyright (C) 2019 THE io.github.teamcons.unboxing'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the io.github.teamcons.unboxing package.
-# Automatically generated, 2019.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: io.github.teamcons.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-11 19:09+0100\n"
-"PO-Revision-Date: 2020-07-04 12:12+0000\n"
-"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
-"Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
-"desktop/unboxing/nn/>\n"
-"Language: nn\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
 
 #: src/Views/ErrorView.vala:21
-#, fuzzy
 msgid "Installation failed"
-msgstr "Installasjonen feila"
+msgstr ""
 
 #: src/Views/ErrorView.vala:38
 msgid "Details"
-msgstr "Detaljer"
+msgstr ""
 
 #: src/Views/ErrorView.vala:43 src/Views/SuccessView.vala:35
 msgid "Close"
-msgstr "Lukk"
+msgstr ""
 
 #: src/Views/MainView.vala:13
-#, fuzzy, c-format
+#, c-format
 msgid "Trust and install “%s”?"
-msgstr "Installerar “%s”"
+msgstr ""
 
 #: src/Views/MainView.vala:26
 msgid "Trust and install this app?"
 msgstr ""
 
 #: src/Views/MainView.vala:27
-#, fuzzy
 msgid ""
 "This app is provided solely by its developer and has not been reviewed for "
 "security, privacy, or system integration."
 msgstr ""
-"Denne appen har blitt publisert ut av utviklarane, og har på ingen måte "
-"blitt sjekka for sikkerheit, personvern og integrasjon mot systemet."
 
 #.
 #. var loading_spinner = new Gtk.Spinner ();
@@ -61,7 +55,7 @@ msgstr ""
 #. loading_grid.append (loading_label);
 #: src/Views/MainView.vala:38
 msgid "I understand"
-msgstr "Eg forstår"
+msgstr ""
 
 #: src/Views/MainView.vala:59
 msgid "Updates may need to be installed manually"
@@ -69,11 +63,11 @@ msgstr ""
 
 #: src/Views/MainView.vala:93 src/Views/ProgressView.vala:43
 msgid "Cancel"
-msgstr "Avbryt"
+msgstr ""
 
 #: src/Views/MainView.vala:96
 msgid "Install Anyway"
-msgstr "Installer likevel"
+msgstr ""
 
 #: src/Views/MainView.vala:109
 msgid "Missing components will be downloaded and installed"
@@ -86,17 +80,17 @@ msgstr ""
 #: src/Views/ProgressView.vala:13
 #, c-format
 msgid "Installing “%s”"
-msgstr "Installerar “%s”"
+msgstr ""
 
 #: src/Views/ProgressView.vala:31
 msgid "Preparing…"
-msgstr "Gjer klart…"
+msgstr ""
 
 #. string? secondary_label_string;
 #: src/Views/SuccessView.vala:24
-#, fuzzy, c-format
+#, c-format
 msgid "“%s” has been installed"
-msgstr "“%s” er allereie installert"
+msgstr ""
 
 #. secondary_label_string = _("Open it any time from the Applications Menu.");
 #: src/Views/SuccessView.vala:27
@@ -109,9 +103,8 @@ msgid "Move ”%s” to Trash"
 msgstr ""
 
 #: src/Welcome.vala:13 src/MainWindow.vala:25
-#, fuzzy
 msgid "Install Untrusted Package"
-msgstr "Installer usikker app"
+msgstr ""
 
 #: src/Welcome.vala:18
 msgid "Unboxing"
@@ -136,9 +129,9 @@ msgid "Browse to open a single file"
 msgstr ""
 
 #: src/Welcome.vala:73
-#, fuzzy, c-format
+#, c-format
 msgid "Open %s"
-msgstr "Opna appen"
+msgstr ""
 
 #. -------- --------
 #: src/Welcome.vala:83
@@ -146,18 +139,16 @@ msgid "Support us!"
 msgstr ""
 
 #: src/Welcome.vala:109
-#, fuzzy
 msgid "All files"
-msgstr "Installasjonen feila"
+msgstr ""
 
 #: src/Welcome.vala:114
 msgid "Deb packages"
 msgstr ""
 
 #: src/Welcome.vala:128
-#, fuzzy
 msgid "Open"
-msgstr "Opna appen"
+msgstr ""
 
 #: src/Welcome.vala:136
 msgid "Package"
@@ -181,14 +172,13 @@ msgid "Please wait until all operations are finished"
 msgstr ""
 
 #: src/MainWindow.vala:136
-#, fuzzy
 msgid "Package installed"
-msgstr "Appen er installert"
+msgstr ""
 
 #: src/MainWindow.vala:137
-#, fuzzy, c-format
+#, c-format
 msgid "Installed “%s”"
-msgstr "Installerar “%s”"
+msgstr ""
 
 #: src/Utils/EnumToLocText.vala:13
 msgid "Starting"
@@ -223,9 +213,8 @@ msgid "Refreshing software list"
 msgstr ""
 
 #: src/Utils/EnumToLocText.vala:29
-#, fuzzy
 msgid "Installing updates"
-msgstr "Installerar “%s”"
+msgstr ""
 
 #: src/Utils/EnumToLocText.vala:31
 msgid "Cleaning up packages"
@@ -260,9 +249,8 @@ msgid "Finished"
 msgstr ""
 
 #: src/Utils/EnumToLocText.vala:47
-#, fuzzy
 msgid "Cancelling"
-msgstr "Avbryt"
+msgstr ""
 
 #: src/Utils/EnumToLocText.vala:49
 msgid "Downloading repository information"
@@ -329,9 +317,8 @@ msgid "Copying files"
 msgstr ""
 
 #: src/Utils/EnumToLocText.vala:82
-#, fuzzy
 msgid "Installing"
-msgstr "Installerar “%s”"
+msgstr ""
 
 #: src/Utils/EnumToLocText.vala:90
 msgid "Cannot start daemon"
@@ -368,110 +355,3 @@ msgstr ""
 #: src/Utils/EnumToLocText.vala:106
 msgid "idk, client error"
 msgstr ""
-
-#~ msgid "This app is already installed."
-#~ msgstr "Appen er allereie installert."
-
-#~ msgid "A newer version of Flatpak is needed to install this app."
-#~ msgstr "Du treng ein nyare versjon av Flatpak for å installera denne appen."
-
-#~ msgid "A required Flatpak remote was not found."
-#~ msgstr "Ein naudsynt fjernkontroll for Flatpak vart ikke funne."
-
-#~ msgid "A required runtime dependency could not be found."
-#~ msgstr "Ein naudsynt del for køyring av program vart ikkje funne."
-
-#~ msgid "The supplied .flatpakref file does not seem to be valid."
-#~ msgstr "Fila .flatpakref som følgde med virkar ikkje å vera gyldig."
-
-#~ msgid "The app is not signed with a trusted signature."
-#~ msgstr "Denne appen har ingen påliteleg signatur."
-
-#~ msgid "The application, runtime, or remote name is invalid."
-#~ msgstr ""
-#~ "Sjølve appen, køyringa av appen, eller remote-namnet er ikkje gyldig."
-
-#, fuzzy
-#~| msgid "An unknown error occured."
-#~ msgid "An unknown error occurred."
-#~ msgstr "Ein ukjend feil har skjedd."
-
-#~ msgid "Fetching details"
-#~ msgstr "Hentar detaljar"
-
-#, fuzzy
-#~| msgid "Updates to this app will not be reviewed"
-#~ msgid "Updates to this app will not be reviewed by elementary"
-#~ msgstr "Oppdateringar til denne appen vil ikkje bli sjekka"
-
-#, c-format
-#~ msgid "Other apps from this distributor may appear in %s"
-#~ msgstr "Andre appar frå denne distributøren kan hamna i %s"
-
-#, fuzzy, c-format
-#~| msgid "Download size may be up to %s"
-#~ msgid "Install size may be up to %s"
-#~ msgstr "Storleiken på nedlastinga kan vera opptil %s"
-
-#, c-format
-#~ msgid "Download size may be up to %s"
-#~ msgstr "Storleiken på nedlastinga kan vera opptil %s"
-
-#~ msgid "Unknown download size"
-#~ msgstr "Ukjend storleik på nedlastinga"
-
-#, fuzzy
-#~| msgid "The app was installed successfully"
-#~ msgid "The app has been installed"
-#~ msgstr "Appen vart installert utan feil"
-
-#, c-format
-#~ msgid "“%s” is already installed"
-#~ msgstr "“%s” er allereie installert"
-
-#~ msgid "This app is already installed"
-#~ msgstr "Denne appen er allereie installert"
-
-#~ msgid "your software center"
-#~ msgstr "ditt programvaresenter"
-
-#, fuzzy
-#~| msgid "The app was installed successfully"
-#~ msgid "The app was installed"
-#~ msgstr "Appen vart installert utan feil"
-
-#, c-format
-#~ msgid "Install untrusted app “%s”?"
-#~ msgstr "Installer den usikre appen “%s”?"
-
-#~ msgid "Install untrusted app?"
-#~ msgstr "Vil du installera denne usikre appen?"
-
-#~ msgid "“%s” was installed successfully"
-#~ msgstr "“%s” vart installert utan feil"
-
-#~ msgid "The app was installed successfully"
-#~ msgstr "Appen vart installert utan feil"
-
-#, fuzzy
-#~| msgid ""
-#~| "Open it any time from the Applications Menu. Visit %s for app "
-#~| "information, updates, and to uninstall."
-#~ msgid ""
-#~ "Open it any time from the Applications Menu. Visit %s for app "
-#~ "information, updates, and to uninstall. Permissions can be changed in <a "
-#~ "href='%s'>%s → %s…</a>"
-#~ msgstr ""
-#~ "Du kan opna den kva tid som helst i Appmenyen. Gå til %s for informasjon "
-#~ "om appen, oppdateringar og for å fjerna appen."
-
-#, fuzzy
-#~| msgid ""
-#~| "No changes were made. Visit %s for app information, updates, and to "
-#~| "uninstall."
-#~ msgid ""
-#~ "No changes were made. Visit %s for app information, updates, and to "
-#~ "uninstall. Permissions can be changed in <a href='%s'>%s → %s…</a>"
-#~ msgstr ""
-#~ "Det vart ikkje gjort nokon endringar. Gå til %s for informasjon om appen, "
-#~ "oppdateringar og for å fjerna den."
