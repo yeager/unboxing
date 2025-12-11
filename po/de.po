@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.teamcons.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-11 19:09+0100\n"
+"POT-Creation-Date: 2025-12-11 20:24+0100\n"
 "PO-Revision-Date: 2024-08-09 19:16+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/desktop/unboxing/"
@@ -102,7 +102,7 @@ msgstr "»%s« wurde installiert"
 #. secondary_label_string = _("Open it any time from the Applications Menu.");
 #: src/Views/SuccessView.vala:27
 #, fuzzy
-msgid "Applications will appear normally in the Applications Menu."
+msgid "New applications will appear normally in the Applications Menu."
 msgstr "Sie kann jederzeit über das Anwendungsmenü geöffnet werden."
 
 #: src/Views/SuccessView.vala:29
@@ -110,30 +110,30 @@ msgstr "Sie kann jederzeit über das Anwendungsmenü geöffnet werden."
 msgid "Move ”%s” to Trash"
 msgstr "»%s» in den Papierkorb verschieben"
 
-#: src/Welcome.vala:13 src/MainWindow.vala:25
+#: src/Welcome.vala:15
 #, fuzzy
 msgid "Install Untrusted Package"
 msgstr "Unbekannte Anwendung installieren"
 
-#: src/Welcome.vala:18
+#: src/Welcome.vala:20
 msgid "Unboxing"
 msgstr ""
 
-#: src/Welcome.vala:32
+#: src/Welcome.vala:34
 msgid "Install Debian Package"
 msgstr ""
 
-#: src/Welcome.vala:33
+#: src/Welcome.vala:35
 msgid ""
 "Debian packages are a legacy format to distribute applications and system "
 "components"
 msgstr ""
 
-#: src/Welcome.vala:47
+#: src/Welcome.vala:48
 msgid "Select a file to open"
 msgstr ""
 
-#: src/Welcome.vala:48
+#: src/Welcome.vala:49
 msgid "Browse to open a single file"
 msgstr ""
 
@@ -143,53 +143,59 @@ msgid "Open %s"
 msgstr "Anwendung öffnen"
 
 #. -------- --------
-#: src/Welcome.vala:83
+#: src/Welcome.vala:81
 msgid "Support us!"
 msgstr ""
 
-#: src/Welcome.vala:109
+#: src/Welcome.vala:111
 #, fuzzy
 msgid "All files"
 msgstr "Installation fehlgeschlagen"
 
-#: src/Welcome.vala:114
+#: src/Welcome.vala:116
 msgid "Deb packages"
 msgstr ""
 
-#: src/Welcome.vala:128
+#: src/Welcome.vala:130
 #, fuzzy
 msgid "Open"
 msgstr "Anwendung öffnen"
 
-#: src/Welcome.vala:136
-msgid "Package"
-msgstr ""
+#: src/MainWindow.vala:18
+#, fuzzy
+msgid "untrusted package"
+msgstr "Unbekannte Anwendung installieren"
 
-#: src/MainWindow.vala:65
+#: src/MainWindow.vala:23
+#, fuzzy, c-format
+msgid "Install “%s”"
+msgstr "»%s« installiert"
+
+#: src/MainWindow.vala:66
 #, fuzzy
 msgid "This does not appear to be a valid package file"
 msgstr ""
 "Es scheint sich nicht um eine gültige Flatpak/Flatpakref-Datei zu handeln"
 
-#: src/MainWindow.vala:66
+#: src/MainWindow.vala:67
 #, c-format
 msgid "%s does not belong to supported mimetypes"
 msgstr ""
 
-#: src/MainWindow.vala:87
-msgid "There Are ongoing operations"
+#: src/MainWindow.vala:88
+msgid "There are ongoing operations"
 msgstr ""
 
-#: src/MainWindow.vala:88
+#: src/MainWindow.vala:89
 msgid "Please wait until all operations are finished"
 msgstr ""
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:137
 #, fuzzy
 msgid "Package installed"
 msgstr "Anwendung installiert"
 
-#: src/MainWindow.vala:137
+#: src/MainWindow.vala:138
 #, c-format
 msgid "Installed “%s”"
 msgstr "»%s« installiert"

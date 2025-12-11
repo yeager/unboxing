@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.github.teamcons.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-11 19:09+0100\n"
+"POT-Creation-Date: 2025-12-11 20:24+0100\n"
 "PO-Revision-Date: 2024-08-06 23:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Uyghur <https://l10n.elementary.io/projects/desktop/unboxing/"
@@ -96,7 +96,7 @@ msgstr ""
 
 #. secondary_label_string = _("Open it any time from the Applications Menu.");
 #: src/Views/SuccessView.vala:27
-msgid "Applications will appear normally in the Applications Menu."
+msgid "New applications will appear normally in the Applications Menu."
 msgstr ""
 
 #: src/Views/SuccessView.vala:29
@@ -104,29 +104,29 @@ msgstr ""
 msgid "Move ”%s” to Trash"
 msgstr ""
 
-#: src/Welcome.vala:13 src/MainWindow.vala:25
+#: src/Welcome.vala:15
 msgid "Install Untrusted Package"
 msgstr ""
 
-#: src/Welcome.vala:18
+#: src/Welcome.vala:20
 msgid "Unboxing"
 msgstr ""
 
-#: src/Welcome.vala:32
+#: src/Welcome.vala:34
 msgid "Install Debian Package"
 msgstr ""
 
-#: src/Welcome.vala:33
+#: src/Welcome.vala:35
 msgid ""
 "Debian packages are a legacy format to distribute applications and system "
 "components"
 msgstr ""
 
-#: src/Welcome.vala:47
+#: src/Welcome.vala:48
 msgid "Select a file to open"
 msgstr ""
 
-#: src/Welcome.vala:48
+#: src/Welcome.vala:49
 msgid "Browse to open a single file"
 msgstr ""
 
@@ -136,48 +136,53 @@ msgid "Open %s"
 msgstr ""
 
 #. -------- --------
-#: src/Welcome.vala:83
+#: src/Welcome.vala:81
 msgid "Support us!"
 msgstr ""
 
-#: src/Welcome.vala:109
+#: src/Welcome.vala:111
 msgid "All files"
 msgstr ""
 
-#: src/Welcome.vala:114
+#: src/Welcome.vala:116
 msgid "Deb packages"
 msgstr ""
 
-#: src/Welcome.vala:128
+#: src/Welcome.vala:130
 msgid "Open"
 msgstr ""
 
-#: src/Welcome.vala:136
-msgid "Package"
+#: src/MainWindow.vala:18
+msgid "untrusted package"
 msgstr ""
 
-#: src/MainWindow.vala:65
-msgid "This does not appear to be a valid package file"
+#: src/MainWindow.vala:23
+#, c-format
+msgid "Install “%s”"
 msgstr ""
 
 #: src/MainWindow.vala:66
+msgid "This does not appear to be a valid package file"
+msgstr ""
+
+#: src/MainWindow.vala:67
 #, c-format
 msgid "%s does not belong to supported mimetypes"
 msgstr ""
 
-#: src/MainWindow.vala:87
-msgid "There Are ongoing operations"
+#: src/MainWindow.vala:88
+msgid "There are ongoing operations"
 msgstr ""
 
-#: src/MainWindow.vala:88
+#: src/MainWindow.vala:89
 msgid "Please wait until all operations are finished"
 msgstr ""
 
-#: src/MainWindow.vala:136
+#: src/MainWindow.vala:137
 msgid "Package installed"
 msgstr ""
 
-#: src/MainWindow.vala:137
+#: src/MainWindow.vala:138
 #, c-format
 msgid "Installed “%s”"
 msgstr ""
