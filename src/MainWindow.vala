@@ -7,6 +7,7 @@
 public class Unboxing.MainWindow : Gtk.ApplicationWindow {
 
     public string? filepath { get; construct; }
+    public string? filename { get; construct; }
 
     private Gtk.Stack stack;
     private MainView main_view;
@@ -17,13 +18,14 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
     public string app_id = "io.github.teamcons.unboxing";
     public string app_name = "io.github.teamcons.unboxing";
 
-    public MainWindow (Gtk.Application application, string? filepath) {
+    public MainWindow (Gtk.Application application, string? filepath, string? filename = _("untrusted package")) {
         Object (
             application: application,
             icon_name: "io.github.teamcons.unboxing",
             resizable: false,
-            title: _("Install Untrusted Package"),
-            filepath: filepath
+            title: _("Install “%s”").printf (filename),
+            filepath: filepath,
+            filename: filename
         );
     }
 
@@ -36,6 +38,8 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
         };
 
         main_view = new MainView ();
+        main_view.app_name = filename;
+
         stack = new Gtk.Stack () {
             transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT,
             vhomogeneous = false,
@@ -84,7 +88,7 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
     }
 
     public void ongoing_dialog () {
-        var dialog = new Granite.MessageDialog.with_image_from_icon_name (_("There Are ongoing operations"),
+        var dialog = new Granite.MessageDialog.with_image_from_icon_name (_("There are ongoing operations"),
             _("Please wait until all operations are finished"),
             "dialog-warning",
             Gtk.ButtonsType.CLOSE);

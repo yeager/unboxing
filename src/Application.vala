@@ -92,10 +92,7 @@ public class Unboxing.Application : Gtk.Application {
         }
 
         var file = files[0];
-        print (file.get_basename ());
-
-        this.hold ();
-        var main_window = new Unboxing.MainWindow (this, file.get_path ());
+        var main_window = new Unboxing.MainWindow (this, file.get_path (), file.get_basename ());
         main_window.present ();
     }
 }

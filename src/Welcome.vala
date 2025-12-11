@@ -33,7 +33,6 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
         var placeholder = new Granite.Placeholder (_("Install Debian Package")) {
             description = _("Debian packages are a legacy format to distribute applications and system components"),
-            icon = new ThemedIcon ("application-vnd.debian.binary-package"),
             vexpand = true,
             halign = Gtk.Align.CENTER,
             valign = Gtk.Align.CENTER
