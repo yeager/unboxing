@@ -1,7 +1,8 @@
 /*
-* SPDX-License-Identifier: GPL-3.0-or-later
-* SPDX-FileCopyrightText: {{YEAR}} {{DEVELOPER_NAME}} <{{DEVELOPER_EMAIL}}>
-*/
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText:  2019-2025 elementary Inc. (https://elementary.io)
+ *                          2025 Stella & Charlie (teamcons.carrd.co)
+ */
 
 namespace Unboxing.Utils {
 

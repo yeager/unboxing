@@ -1,5 +1,6 @@
 /*
-* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2025 elementary, Inc. (https://elementary.io)
+* Copyright (c) 2025 Stella & Charlie (teamcons.carrd.co)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
