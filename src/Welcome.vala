@@ -6,6 +6,8 @@
 
 public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
+    public signal void open_this (File file);
+
     public Welcome (Gtk.Application application) {
         Object (
             application: application,
@@ -61,7 +63,6 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
         string? item = null;
         while ((item = downloads_content.read_name ()) != null) {
-            print (item);
             string path = Path.build_filename (downloads, item);
             File file = File.new_for_path (path);
 
@@ -73,11 +74,9 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
             _("Open %s").printf (file.get_basename ()),
                 "%s".printf (file.get_path ()));
 
-                open_package.clicked.connect (() => {hide (); application.open ({file}, "package");});
+                open_package.clicked.connect (() => {open_this (file);});
             }
         }
-
-
 
         /* -------- -------- */
         var support_button = new Gtk.LinkButton.with_label ("https://ko-fi.com/teamcons", _("Support us!")) {
@@ -132,8 +131,7 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         open_dialog.open.begin (this, null, (obj, res) => {
             try {
                 var file = open_dialog.open.end (res);
-                hide ();
-                application.open ({file}, _("Package"));                
+                open_this (file);
 
             } catch (Error err) {
                 warning ("Failed to select file to open: %s", err.message);
@@ -150,8 +148,7 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
                 file_array += file;
             }
 
-            hide ();
-            application.open (file_array, "");
+            open_this (file_array[0]);
             return true;
         }
         return false;

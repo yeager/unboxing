@@ -63,20 +63,21 @@ public class Unboxing.Application : Gtk.Application {
     }
 
     protected override void activate () {
-        if (welcome_requested && welcome == null) {
+        print ("activate");
+
+        if (welcome == null) {
             welcome = new Unboxing.Welcome (this);
             welcome.show ();
             welcome.present ();
-            welcome_requested = false;
+            welcome.open_this.connect (
+                (file) =>
+                                    {open ({file}, "deb");
+                                    welcome.close ();
+                                    welcome = null;});
         }
     }
 
     public static int main (string[] args) {
-        if (args.length < 2) {
-            print ("Usage: %s /path/to/flatpakref or /path/to/flatpak\n", args[0]);
-            welcome_requested = true;
-        }
-
         var app = new Application ();
         return app.run (args);
     }
