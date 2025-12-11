@@ -1,6 +1,6 @@
 app-id: io.github.teamcons.unboxing
 runtime: io.elementary.Platform
-runtime-version: '8'
+runtime-version: '8.2'
 sdk: io.elementary.Sdk
 command: io.github.teamcons.unboxing
 
@@ -12,7 +12,6 @@ finish-args:
   # Required to install packages
   - --socket=system-bus
   - --talk-name=org.freedesktop.PackageKit
-  - --system-talk-name=org.freedesktop.Accounts
   # Required to install dependencies
   - --share=network
   # Required to detect packages in Download, or drag&drop from there

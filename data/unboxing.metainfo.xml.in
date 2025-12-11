@@ -29,15 +29,15 @@
   <screenshots>
     <screenshot type="default">
       <caption>A welcome screen</caption>
-      <image>https://raw.githubusercontent.com/teamcons/unboxing/main/data/screenshots/welcome.png</image>
+      <image>https://raw.githubusercontent.com/teamcons/unboxing/1.0.0/data/screenshots/welcome.png</image>
     </screenshot>
     <screenshot>
       <caption>The dialog before installation</caption>
-      <image>https://raw.githubusercontent.com/teamcons/unboxing/main/data/screenshots/dialog.png</image>
+      <image>https://raw.githubusercontent.com/teamcons/unboxing/1.0.0/data/screenshots/dialog.png</image>
     </screenshot>
     <screenshot>
       <caption>The final dialog</caption>
-      <image>https://raw.githubusercontent.com/teamcons/unboxing/main/data/screenshots/finish.png</image>
+      <image>https://raw.githubusercontent.com/teamcons/unboxing/1.0.0/data/screenshots/finish.png</image>
     </screenshot>
   </screenshots>
 
@@ -50,6 +50,7 @@
   <provides>
     <binary>io.github.teamcons.unboxing</binary>
   </provides>
+  <launchable type="desktop-id">io.github.teamcons.unboxing.desktop</launchable>
 
   <recommends>
     <display_length compare="ge">508</display_length>
@@ -70,6 +71,13 @@
   </developer>
 
   <releases>
+    <release version="1.0.1" date="2025-12-11" urgency="medium">
+      <description>
+        <ul>
+          <li>Appcenter corrections</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.0.0" date="2025-12-11" urgency="medium">
       <description>
         <ul>
