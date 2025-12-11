@@ -1,7 +1,7 @@
 project(
     'io.github.teamcons.unboxing', 
     'vala', 'c',
-    version: '1.0.0',
+    version: '1.0.1',
     meson_version: '>= 0.59'
 )
 
