@@ -2,10 +2,10 @@
 <!-- Copyright 2019-2025 elementary, Inc. <contact@elementary.io> -->
 <!-- Copyright 2025 Teamcons -->
 <component type="desktop-application">
-  <id>io.github.teamcons.unboxing</id>
+  <id>io.github.elly_codes.unboxing</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <translation type="gettext">io.github.teamcons.unboxing</translation>
+  <translation type="gettext">io.github.elly_codes.unboxing</translation>
 
   <name>Unboxing</name>
   <summary>Install apps downloaded from the Internet</summary>
@@ -29,15 +29,15 @@
   <screenshots>
     <screenshot type="default">
       <caption>A welcome screen</caption>
-      <image>https://raw.githubusercontent.com/teamcons/unboxing/1.0.0/data/screenshots/welcome.png</image>
+      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.0/data/screenshots/welcome.png</image>
     </screenshot>
     <screenshot>
       <caption>The dialog before installation</caption>
-      <image>https://raw.githubusercontent.com/teamcons/unboxing/1.0.0/data/screenshots/dialog.png</image>
+      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.0/data/screenshots/dialog.png</image>
     </screenshot>
     <screenshot>
       <caption>The final dialog</caption>
-      <image>https://raw.githubusercontent.com/teamcons/unboxing/1.0.0/data/screenshots/finish.png</image>
+      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.0/data/screenshots/finish.png</image>
     </screenshot>
   </screenshots>
 
@@ -48,9 +48,9 @@
   <content_rating type="oars-1.1" />
 
   <provides>
-    <binary>io.github.teamcons.unboxing</binary>
+    <binary>io.github.elly_codes.unboxing</binary>
   </provides>
-  <launchable type="desktop-id">io.github.teamcons.unboxing.desktop</launchable>
+  <launchable type="desktop-id">io.github.elly_codes.unboxing.desktop</launchable>
 
   <recommends>
     <display_length compare="ge">508</display_length>
@@ -61,10 +61,10 @@
     <control>touch</control>
   </supports>
 
-  <url type="homepage">https://github.com/teamcons/unboxing/</url>
-  <url type="bugtracker">https://github.com/teamcons/unboxing/issues</url>
-  <url type="donation">https://ko-fi.com/teamcons</url>
-  <url type="help">https://github.com/teamcons/unboxing/issues</url>
+  <url type="homepage">https://github.com/elly_code/unboxing/</url>
+  <url type="bugtracker">https://github.com/elly_code/unboxing/issues</url>
+  <url type="donation">https://ko-fi.com/elly_code</url>
+  <url type="help">https://github.com/elly_code/unboxing/issues</url>
 
   <developer id="io.github.teamcons">
     <name>Team Constellation</name>

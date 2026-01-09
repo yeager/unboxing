@@ -2,8 +2,8 @@
 Name=Unboxing
 Comment=Install apps downloaded from the Internet
 GenericName=Package Installer
-Exec=io.github.teamcons.unboxing %u
-Icon=io.github.teamcons.unboxing
+Exec=io.github.elly_codes.unboxing %u
+Icon=io.github.elly_codes.unboxing
 Keywords=package;apt;dpkg;install;rpm;deb;debian
 SingleMainWindow=false
 Terminal=false

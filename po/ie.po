@@ -1,11 +1,11 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.github.teamcons.unboxing package.
+# This file is distributed under the same license as the io.github.elly_codes.unboxing package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.teamcons.unboxing\n"
+"Project-Id-Version: io.github.elly_codes.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-11 21:13+0100\n"
 "PO-Revision-Date: 2025-03-20 07:55+0000\n"

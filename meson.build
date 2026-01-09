@@ -1,5 +1,5 @@
 project(
-    'io.github.teamcons.unboxing', 
+    'io.github.elly_codes.unboxing', 
     'vala', 'c',
     version: '1.0.2',
     meson_version: '>= 0.59'

@@ -29,7 +29,7 @@ public class Unboxing.SuccessView : AbstractView {
         var trash_check = new Gtk.CheckButton.with_label (_("Move ”%s” to Trash").printf (file.get_basename ()));
         content_area.attach (trash_check, 0, 0);
 
-        var settings = new Settings ("io.github.teamcons.unboxing");
+        var settings = new Settings ("io.github.elly_codes.unboxing");
         settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
 
         var close_button = new Gtk.Button.with_label (_("Close"));

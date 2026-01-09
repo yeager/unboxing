@@ -38,7 +38,7 @@ public class Unboxing.Application : Gtk.Application {
         GLib.Intl.textdomain (GETTEXT_PACKAGE);
 
         Object (
-            application_id: "io.github.teamcons.unboxing",
+            application_id: "io.github.elly_codes.unboxing",
             flags: ApplicationFlags.HANDLES_OPEN
         );
     }

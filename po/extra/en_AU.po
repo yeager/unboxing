@@ -83,5 +83,5 @@ msgstr ""
 #~ msgid "elementary, Inc."
 #~ msgstr "elementary, Inc."
 
-#~ msgid "io.github.teamcons.unboxing"
-#~ msgstr "io.github.teamcons.unboxing"
+#~ msgid "io.github.elly_codes.unboxing"
+#~ msgstr "io.github.elly_codes.unboxing"

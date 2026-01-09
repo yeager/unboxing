@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-  <schema path="/io/github/teamcons/unboxing/" id="io.github.teamcons.unboxing" gettext-domain="io.github.teamcons.unboxing">
+  <schema path="/io.github.elly_codes.unboxing/" id="io.github.elly_codes.unboxing" gettext-domain="io.github.elly_codes.unboxing">
     <key name="trash-on-success" type="b">
         <default>false</default>
         <summary>Trash on success.</summary>

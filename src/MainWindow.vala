@@ -18,7 +18,7 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
     public MainWindow (Gtk.Application application, string? filepath, string? filename = _("untrusted package")) {
         Object (
             application: application,
-            icon_name: "io.github.teamcons.unboxing",
+            icon_name: "io.github.elly_codes.unboxing",
             resizable: false,
             title: _("Install “%s”").printf (filename),
             filepath: filepath,
@@ -29,7 +29,7 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
     construct {
         backend = Backend.get_instance ();
 
-        var image = new Gtk.Image.from_icon_name ("io.github.teamcons.unboxing") {
+        var image = new Gtk.Image.from_icon_name ("io.github.elly_codes.unboxing") {
             pixel_size = 48,
             valign = Gtk.Align.START
         };

@@ -1,11 +1,11 @@
-# Vietnamese translations for io.github.teamcons.unboxing package.
-# Copyright (C) 2019 THE io.github.teamcons.unboxing'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the io.github.teamcons.unboxing package.
+# Vietnamese translations for io.github.elly_codes.unboxing package.
+# Copyright (C) 2019 THE io.github.elly_codes.unboxing'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the io.github.elly_codes.unboxing package.
 # Automatically generated, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: io.github.teamcons.unboxing\n"
+"Project-Id-Version: io.github.elly_codes.unboxing\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-11 21:13+0100\n"
 "PO-Revision-Date: 2019-09-30 23:19+0000\n"
