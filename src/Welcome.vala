@@ -17,6 +17,10 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
     }
 
     construct {
+        default_height = Application.settings.get_int ("window-height");
+        default_width = Application.settings.get_int ("window-width");
+        maximized = Application.settings.get_boolean ("window-maximized");
+
         var title_widget = new Gtk.Label (_("Unboxing"));
         title_widget.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
 
@@ -103,8 +107,18 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
 
         select.clicked.connect (on_open_document);
+
+        close_request.connect (on_close);
     }
 
+    private bool on_close () {
+        int height, width;
+        get_default_size (out width, out height);
+        Application.settings.set_int ("window-height", height);
+        Application.settings.set_int ("window-width", width);
+        Application.settings.set_boolean ("window-maximized", maximized);
+        return false;
+    }
 
     public void on_open_document () {
         var all_files_filter = new Gtk.FileFilter () {

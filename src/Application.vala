@@ -26,6 +26,8 @@ public class Unboxing.Application : Gtk.Application {
         "application/vnd.debian.binary-package"
     };
 
+
+    public static Settings settings;
     private static Unboxing.Welcome? welcome;
 
     // Used for commandline option handling
@@ -41,6 +43,10 @@ public class Unboxing.Application : Gtk.Application {
             application_id: "io.github.elly_code.unboxing",
             flags: ApplicationFlags.HANDLES_OPEN
         );
+    }
+
+    static construct {
+        settings = new GLib.Settings ("io.github.elly_code.unboxing");
     }
 
     protected override void startup () {
