@@ -17,7 +17,7 @@
 
 You can download and install Unboxing from various sources:
 
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg?new)](https://appcenter.elementary.io/io.github.elly_codes.unboxing)
+[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg?new)](https://appcenter.elementary.io/io.github.elly_code.unboxing)
 
 ## Building, Testing, and Installation
 
@@ -35,7 +35,7 @@ Run `meson build` to configure the build environment. Change to the build direct
     cd build
     ninja
 
-To install, use `ninja install`, then execute with `io.github.elly_codes.unboxing`
+To install, use `ninja install`, then execute with `io.github.elly_code.unboxing`
 
     ninja install
-    io.github.elly_codes.unboxing
+    io.github.elly_code.unboxing

@@ -1,8 +1,8 @@
-app-id: io.github.elly_codes.unboxing
+app-id: io.github.elly_code.unboxing
 runtime: io.elementary.Platform
 runtime-version: '8'
 sdk: io.elementary.Sdk
-command: io.github.elly_codes.unboxing
+command: io.github.elly_code.unboxing
 
 finish-args:
   - --device=dri

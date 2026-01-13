@@ -2,10 +2,10 @@
 <!-- Copyright 2019-2025 elementary, Inc. <contact@elementary.io> -->
 <!-- Copyright 2025 Teamcons -->
 <component type="desktop-application">
-  <id>io.github.elly_codes.unboxing</id>
+  <id>io.github.elly_code.unboxing</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
-  <translation type="gettext">io.github.elly_codes.unboxing</translation>
+  <translation type="gettext">io.github.elly_code.unboxing</translation>
 
   <name>Unboxing</name>
   <summary>Install apps downloaded from the Internet</summary>
@@ -48,9 +48,9 @@
   <content_rating type="oars-1.1" />
 
   <provides>
-    <binary>io.github.elly_codes.unboxing</binary>
+    <binary>io.github.elly_code.unboxing</binary>
   </provides>
-  <launchable type="desktop-id">io.github.elly_codes.unboxing.desktop</launchable>
+  <launchable type="desktop-id">io.github.elly_code.unboxing.desktop</launchable>
 
   <recommends>
     <display_length compare="ge">508</display_length>

@@ -104,5 +104,5 @@ msgstr ""
 #~ msgid "First release. Hello world!"
 #~ msgstr "Fyrste utgåve. Hei verda!"
 
-#~ msgid "io.github.elly_codes.unboxing"
-#~ msgstr "io.github.elly_codes.unboxing"
+#~ msgid "io.github.elly_code.unboxing"
+#~ msgstr "io.github.elly_code.unboxing"
