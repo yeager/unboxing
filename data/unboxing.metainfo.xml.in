@@ -62,8 +62,9 @@
   </supports>
 
   <url type="homepage">https://github.com/elly_code/unboxing/</url>
+  <url type="vcs-browser">https://github.com/elly_code/unboxing/</url>
   <url type="bugtracker">https://github.com/elly_code/unboxing/issues</url>
-  <url type="donation">https://ko-fi.com/elly_code</url>
+  <url type="donation">https://ko-fi.com/teamcons</url>
   <url type="help">https://github.com/elly_code/unboxing/issues</url>
 
   <developer id="io.github.teamcons">
