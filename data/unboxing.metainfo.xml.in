@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2019-2025 elementary, Inc. <contact@elementary.io> -->
-<!-- Copyright 2025 Teamcons -->
+<!-- Copyright 2025-2026 Teamcons -->
 <component type="desktop-application">
   <id>io.github.elly_code.unboxing</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -62,7 +62,6 @@
   </supports>
 
   <url type="homepage">https://github.com/elly_code/unboxing/</url>
-  <url type="vcs-browser">https://github.com/elly_code/unboxing/</url>
   <url type="bugtracker">https://github.com/elly_code/unboxing/issues</url>
   <url type="donation">https://ko-fi.com/teamcons</url>
   <url type="help">https://github.com/elly_code/unboxing/issues</url>
