@@ -67,6 +67,7 @@ public class Unboxing.Application : Gtk.Application {
         set_accels_for_action ("app.quit", {"<Control>q"});
         quit_action.activate.connect (quit);
 
+        set_accels_for_action ("win.action_open", {"<Control>o"});
         this.window_removed.connect (() => {
             if (get_windows ().length () == 0) {
                 quit ();

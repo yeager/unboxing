@@ -28,8 +28,12 @@
 
   <screenshots>
     <screenshot type="default">
-      <caption>A welcome screen</caption>
-      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.0/data/screenshots/welcome.png</image>
+      <caption>The welcome screen</caption>
+      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.3/data/screenshots/welcome.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The welcome screen in dark mode</caption>
+      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.3/data/screenshots/welcome-dark.png</image>
     </screenshot>
     <screenshot>
       <caption>The dialog before installation</caption>
@@ -57,9 +61,6 @@
       <id>io.github.teamcons.unboxing</id>
   </replaces>
 
-  <recommends>
-    <display_length compare="ge">508</display_length>
-  </recommends>
   <supports>
     <control>pointing</control>
     <control>keyboard</control>

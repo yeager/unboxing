@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-11 21:13+0100\n"
+"POT-Creation-Date: 2026-01-23 16:46+0100\n"
 "PO-Revision-Date: 2021-09-04 17:03+0000\n"
 "Last-Translator: Muhammad Al-Jayyousi <m7md.j99@protonmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/desktop/unboxing-"
@@ -47,22 +47,38 @@ msgid ""
 msgstr ""
 
 #: data/unboxing.metainfo.xml.in:31
-msgid "A welcome screen"
+msgid "The welcome screen"
 msgstr ""
 
 #: data/unboxing.metainfo.xml.in:35
-msgid "The dialog before installation"
+msgid "The welcome screen in dark mode"
 msgstr ""
 
 #: data/unboxing.metainfo.xml.in:39
+msgid "The dialog before installation"
+msgstr ""
+
+#: data/unboxing.metainfo.xml.in:43
 msgid "The final dialog"
 msgstr ""
 
-#: data/unboxing.metainfo.xml.in:69
+#: data/unboxing.metainfo.xml.in:77
 msgid "Team Constellation"
 msgstr ""
 
-#: data/unboxing.metainfo.xml.in:76
+#: data/unboxing.metainfo.xml.in:84
+msgid "Re-RDNN"
+msgstr ""
+
+#: data/unboxing.metainfo.xml.in:85
+msgid "Support link moved into button"
+msgstr ""
+
+#: data/unboxing.metainfo.xml.in:86
+msgid "More robust handling of files outside Downloads"
+msgstr ""
+
+#: data/unboxing.metainfo.xml.in:93
 msgid "Initial release"
 msgstr ""
 

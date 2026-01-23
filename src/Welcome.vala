@@ -33,7 +33,6 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         var actions = new SimpleActionGroup ();
         actions.add_action_entries (ACTION_ENTRIES, this);
         insert_action_group ("win", actions);
-        application.set_accels_for_action ("win.action_open", {"<Control>o"});
 
         var title_widget = new Gtk.Label (_("Unboxing"));
         title_widget.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
