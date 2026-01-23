@@ -98,7 +98,16 @@ public class Unboxing.Application : Gtk.Application {
             return;
         }
 
-        var file = files[0];
+        var selected_file = files[0];
+        var file = Utils.tmp_file (selected_file.get_basename ());
+
+        try {
+            selected_file.copy (file, GLib.FileCopyFlags.OVERWRITE);
+
+        } catch (Error e) {
+            warning (e.message);
+        }
+        
         var main_window = new Unboxing.MainWindow (this, file.get_path (), file.get_basename ());
         main_window.present ();
     }

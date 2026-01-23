@@ -168,10 +168,14 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
         open_dialog.open.begin (this, null, (obj, res) => {
             try {
+
+                // The filechooser gives us a sandboxed path, but PackageKit runs over Dbus unsandboxed
+                // So we need to copy the file over somewhere Packagekit can work with it
                 var selected_file = open_dialog.open.end (res);
-                var file = Utils.tmp_file ();
+                var file = Utils.tmp_file (selected_file.get_basename ());
                 selected_file.copy (file, GLib.FileCopyFlags.OVERWRITE);
 
+                //TODO: Save the "True Path" so user can delete the file later on like any other file
                 open_this (file);
 
             } catch (Error err) {

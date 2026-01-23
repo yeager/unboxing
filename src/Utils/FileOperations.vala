@@ -18,7 +18,7 @@ namespace Unboxing.Utils {
         }
     }
 
-    public static File tmp_file () {
+    public static File tmp_file (string name) {
         var dir = File.new_for_path (Environment.get_user_cache_dir ());
 
         try {
@@ -30,7 +30,7 @@ namespace Unboxing.Utils {
 			warning ("[STORAGE] Failed to prepare target data directory %s\n", e.message);
 		}
 
-        var tmp = File.new_for_path (Environment.get_user_cache_dir () + "/" + "Package");
+        var tmp = File.new_for_path (Environment.get_user_cache_dir () + "/" + name);
         return tmp;
     }
 
