@@ -9,6 +9,14 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
     public signal void open_this (File file);
     const string DONATION_LINK = "https://ko-fi.com/teamcons";
 
+    public const string ACTION_PREFIX = "win.";
+    public const string ACTION_OPEN = "action_open";
+
+    public static Gee.MultiMap<string, string> action_accelerators;
+    private const GLib.ActionEntry[] ACTION_ENTRIES = {
+        { ACTION_OPEN, on_open_document}
+    };
+
     public Welcome (Gtk.Application application) {
         Object (
             application: application,
@@ -21,6 +29,11 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         default_height = Application.settings.get_int ("window-height");
         default_width = Application.settings.get_int ("window-width");
         maximized = Application.settings.get_boolean ("window-maximized");
+
+        var actions = new SimpleActionGroup ();
+        actions.add_action_entries (ACTION_ENTRIES, this);
+        insert_action_group ("win", actions);
+        application.set_accels_for_action ("win.action_open", {"<Control>o"});
 
         var title_widget = new Gtk.Label (_("Unboxing"));
         title_widget.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);

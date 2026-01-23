@@ -16,15 +16,15 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
 
     Unboxing.Backend backend;
 
-    public MainWindow (Gtk.Application application, string? filepath, string? filename = _("Untrusted package")) {
+    public MainWindow (Gtk.Application application, File file) {
         Object (
             application: application,
             icon_name: "io.github.elly_code.unboxing",
             resizable: false,
             title: _("Install “%s”").printf (filename),
-            filepath: filepath,
-            filename: filename,
-            file: File.new_for_path (filepath)
+            file: file,
+            filepath: file.get_path (),
+            filename: file.get_basename ()
         );
     }
 
@@ -61,8 +61,6 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
 
         add_css_class ("dialog");
         add_css_class (Granite.STYLE_CLASS_MESSAGE_DIALOG);
-
-        var file = File.new_for_path (filepath);
 
         if (!Utils.is_package (file)) {
             var title = _("This does not appear to be a valid package file");

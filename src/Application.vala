@@ -26,7 +26,6 @@ public class Unboxing.Application : Gtk.Application {
         "application/vnd.debian.binary-package"
     };
 
-
     public static Settings settings;
     private static Unboxing.Welcome? welcome;
 
@@ -51,6 +50,7 @@ public class Unboxing.Application : Gtk.Application {
 
     protected override void startup () {
         base.startup ();
+        Gtk.init ();
         Granite.init ();
 
         var granite_settings = Granite.Settings.get_default ();
@@ -98,7 +98,7 @@ public class Unboxing.Application : Gtk.Application {
         }
 
         var file = files[0];
-        var main_window = new Unboxing.MainWindow (this, file.get_path (), file.get_basename ());
+        var main_window = new Unboxing.MainWindow (this, file);
         main_window.present ();
     }
 }
