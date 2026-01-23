@@ -30,7 +30,7 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         };
         headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-        var link_button = new Gtk.Button.from_icon_name ("help-about") {
+        var link_button = new Gtk.Button.from_icon_name ("face-heart") {
             tooltip_text = _("Support us! (%s)").printf (DONATION_LINK)
         };
         link_button.add_css_class (Granite.STYLE_CLASS_FLAT);
@@ -136,7 +136,7 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         all_files_filter.add_pattern ("*");
 
         var deb_filter = new Gtk.FileFilter () {
-            name = _("Deb packages"),
+            name = _("Debian package"),
         };
 
         foreach (var mimetype in Application.SUPPORTED_CONTENT_TYPES) {

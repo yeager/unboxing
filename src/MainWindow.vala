@@ -8,6 +8,7 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
 
     public string? filepath { get; construct; }
     public string? filename { get; construct; }
+    public File file { get; construct; }
 
     private Gtk.Stack stack;
     private MainView main_view;
@@ -15,14 +16,15 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
 
     Unboxing.Backend backend;
 
-    public MainWindow (Gtk.Application application, string? filepath, string? filename = _("untrusted package")) {
+    public MainWindow (Gtk.Application application, string? filepath, string? filename = _("Untrusted package")) {
         Object (
             application: application,
             icon_name: "io.github.elly_code.unboxing",
             resizable: false,
             title: _("Install “%s”").printf (filename),
             filepath: filepath,
-            filename: filename
+            filename: filename,
+            file: File.new_for_path (filepath)
         );
     }
 
