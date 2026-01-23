@@ -168,7 +168,10 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
         open_dialog.open.begin (this, null, (obj, res) => {
             try {
-                var file = open_dialog.open.end (res);
+                var selected_file = open_dialog.open.end (res);
+                var file = Utils.tmp_file ();
+                selected_file.copy (file, GLib.FileCopyFlags.OVERWRITE);
+
                 open_this (file);
 
             } catch (Error err) {
