@@ -18,6 +18,22 @@ namespace Unboxing.Utils {
         }
     }
 
+    public static File tmp_file (string name) {
+        var dir = File.new_for_path (Environment.get_user_cache_dir ());
+
+        try {
+			if (!dir.query_exists ()) {
+				dir.make_directory ();
+                print ("created");
+			}
+		} catch (Error e) {
+			warning ("[STORAGE] Failed to prepare target data directory %s\n", e.message);
+		}
+
+        var tmp = File.new_for_path (Environment.get_user_cache_dir () + "/" + name);
+        return tmp;
+    }
+
     public static string[]? loop_files (File[] files) {
 
         string[] filelist = {};

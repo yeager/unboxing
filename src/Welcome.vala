@@ -7,6 +7,15 @@
 public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
     public signal void open_this (File file);
+    const string DONATION_LINK = "https://ko-fi.com/teamcons";
+
+    public const string ACTION_PREFIX = "win.";
+    public const string ACTION_OPEN = "action_open";
+
+    public static Gee.MultiMap<string, string> action_accelerators;
+    private const GLib.ActionEntry[] ACTION_ENTRIES = {
+        { ACTION_OPEN, on_open_document}
+    };
 
     public Welcome (Gtk.Application application) {
         Object (
@@ -21,6 +30,10 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         default_width = Application.settings.get_int ("window-width");
         maximized = Application.settings.get_boolean ("window-maximized");
 
+        var actions = new SimpleActionGroup ();
+        actions.add_action_entries (ACTION_ENTRIES, this);
+        insert_action_group ("win", actions);
+
         var title_widget = new Gtk.Label (_("Unboxing"));
         title_widget.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
 
@@ -28,6 +41,17 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
             title_widget = title_widget
         };
         headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+
+        var link_button = new Gtk.Button.from_icon_name ("face-heart") {
+            tooltip_text = _("Support us! (%s)").printf (DONATION_LINK)
+        };
+        link_button.add_css_class (Granite.STYLE_CLASS_FLAT);
+        link_button.clicked.connect (() => {
+            var urilaunch = new Gtk.UriLauncher (DONATION_LINK);
+            urilaunch.launch.begin (this, null);
+        });
+
+        headerbar.pack_end (link_button);
         titlebar = headerbar;
 
         var view = new Gtk.Box (VERTICAL, 0) {
@@ -82,7 +106,7 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         }
 
         /* -------- -------- */
-        var support_button = new Gtk.LinkButton.with_label ("https://ko-fi.com/teamcons", _("Support us!")) {
+        var support_button = new Gtk.LinkButton.with_label (DONATION_LINK, _("Support us!")) {
             halign = Gtk.Align.CENTER,
             hexpand = false,
             valign = Gtk.Align.END,
@@ -92,7 +116,7 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         };
 
         view.append (scrolled);
-        view.append (support_button);
+        //view.append (support_button);
 
         var window_handle = new Gtk.WindowHandle () {
             child = view
@@ -100,14 +124,11 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
         child = window_handle;
 
-
         var drop_target = new Gtk.DropTarget (typeof (Gdk.FileList), Gdk.DragAction.COPY);
         ((Gtk.Widget)this).add_controller (drop_target);
         drop_target.drop.connect (on_dropped);
 
-
         select.clicked.connect (on_open_document);
-
         close_request.connect (on_close);
     }
 
@@ -127,7 +148,7 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
         all_files_filter.add_pattern ("*");
 
         var deb_filter = new Gtk.FileFilter () {
-            name = _("Deb packages"),
+            name = _("Debian package"),
         };
 
         foreach (var mimetype in Application.SUPPORTED_CONTENT_TYPES) {
@@ -147,7 +168,14 @@ public class Unboxing.Welcome : Gtk.ApplicationWindow {
 
         open_dialog.open.begin (this, null, (obj, res) => {
             try {
-                var file = open_dialog.open.end (res);
+
+                // The filechooser gives us a sandboxed path, but PackageKit runs over Dbus unsandboxed
+                // So we need to copy the file over somewhere Packagekit can work with it
+                var selected_file = open_dialog.open.end (res);
+                var file = Utils.tmp_file (selected_file.get_basename ());
+                selected_file.copy (file, GLib.FileCopyFlags.OVERWRITE);
+
+                //TODO: Save the "True Path" so user can delete the file later on like any other file
                 open_this (file);
 
             } catch (Error err) {

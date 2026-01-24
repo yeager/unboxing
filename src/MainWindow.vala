@@ -15,7 +15,7 @@ public class Unboxing.MainWindow : Gtk.ApplicationWindow {
 
     Unboxing.Backend backend;
 
-    public MainWindow (Gtk.Application application, string? filepath, string? filename = _("untrusted package")) {
+    public MainWindow (Gtk.Application application, string? filepath, string? filename = _("Untrusted package")) {
         Object (
             application: application,
             icon_name: "io.github.elly_code.unboxing",

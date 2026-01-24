@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2019-2025 elementary, Inc. <contact@elementary.io> -->
-<!-- Copyright 2025 Teamcons -->
+<!-- Copyright 2025-2026 Teamcons -->
 <component type="desktop-application">
   <id>io.github.elly_code.unboxing</id>
   <metadata_license>CC0-1.0</metadata_license>
@@ -28,8 +28,12 @@
 
   <screenshots>
     <screenshot type="default">
-      <caption>A welcome screen</caption>
-      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.0/data/screenshots/welcome.png</image>
+      <caption>The welcome screen</caption>
+      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.3/data/screenshots/welcome.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>The welcome screen in dark mode</caption>
+      <image>https://raw.githubusercontent.com/elly_code/unboxing/1.0.3/data/screenshots/welcome-dark.png</image>
     </screenshot>
     <screenshot>
       <caption>The dialog before installation</caption>
@@ -47,14 +51,16 @@
 
   <content_rating type="oars-1.1" />
 
+  <launchable type="desktop-id">io.github.elly_code.unboxing.desktop</launchable>
   <provides>
     <binary>io.github.elly_code.unboxing</binary>
+    <id>io.github.elly_code.unboxing</id>
+    <id>io.github.elly_code.unboxing</id>
   </provides>
-  <launchable type="desktop-id">io.github.elly_code.unboxing.desktop</launchable>
+  <replaces>
+      <id>io.github.teamcons.unboxing</id>
+  </replaces>
 
-  <recommends>
-    <display_length compare="ge">508</display_length>
-  </recommends>
   <supports>
     <control>pointing</control>
     <control>keyboard</control>
@@ -63,25 +69,21 @@
 
   <url type="homepage">https://github.com/elly_code/unboxing/</url>
   <url type="bugtracker">https://github.com/elly_code/unboxing/issues</url>
-  <url type="donation">https://ko-fi.com/elly_code</url>
+  <url type="donation">https://ko-fi.com/teamcons</url>
   <url type="help">https://github.com/elly_code/unboxing/issues</url>
+  <url type="vcs-browser">https://github.com/elly_code/unboxing/</url>
 
   <developer id="io.github.teamcons">
     <name>Team Constellation</name>
   </developer>
 
   <releases>
-    <release version="1.0.2" date="2025-12-11" urgency="medium">
+    <release version="1.0.3" date="2026-01-11" urgency="medium">
       <description>
         <ul>
-          <li>Platform rollback</li>
-        </ul>
-      </description>
-    </release>
-    <release version="1.0.1" date="2025-12-11" urgency="medium">
-      <description>
-        <ul>
-          <li>Appcenter corrections</li>
+          <li>Re-RDNN</li>
+          <li>Support link moved into button</li>
+          <li>More robust handling of files outside Downloads</li>
         </ul>
       </description>
     </release>

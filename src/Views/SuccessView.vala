@@ -27,7 +27,11 @@ public class Unboxing.SuccessView : AbstractView {
         secondary_label.label = _("New applications will appear normally in the Applications Menu.");
 
         var trash_check = new Gtk.CheckButton.with_label (_("Move ”%s” to Trash").printf (file.get_basename ()));
-        content_area.attach (trash_check, 0, 0);
+
+        var from_cache = file.get_path ().contains (Environment.get_user_cache_dir ());
+        if (!from_cache) {
+            content_area.attach (trash_check, 0, 0);
+        }
 
         var settings = new Settings ("io.github.elly_code.unboxing");
         settings.bind ("trash-on-success", trash_check, "active", GLib.SettingsBindFlags.DEFAULT);
@@ -43,7 +47,7 @@ public class Unboxing.SuccessView : AbstractView {
         ((Unboxing.MainWindow) app.active_window).default_widget = close_button;
 
         close_button.clicked.connect (() => {
-            if (trash_check.active) {
+            if (trash_check.active || from_cache) {
                 Utils.trash_files ({file});
             }
 

@@ -14,9 +14,7 @@ public class Unboxing.Backend : Object {
         }
         return instance;
     }
-    
-    
-    public File[] files { get; private set; }
+
     public bool busy { get; private set; default = false;}
 
     Pk.Task task;
